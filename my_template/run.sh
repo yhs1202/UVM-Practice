@@ -10,3 +10,7 @@ vcs -full64 -sverilog \
     -Mdir=$OUT/csrc \
     -o $OUT/simv \
     -f run.f
+
+cd $OUT
+./simv +fsdbfile+wave.fsdb
+cd ..
