@@ -16,7 +16,7 @@ module tb_adder ();
 
     initial begin
         $fsdbDumpvars(0);
-        $fsdbDumpvars("wave.fsdb");
+        $fsdbDumpfile("wave.fsdb");
         uvm_config_db #(virtual adder_if)::set(null, "*", "intf", intf);
 
         run_test("test");
