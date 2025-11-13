@@ -1,3 +1,7 @@
+# My VCS Build and Simulation Script
+# Author: Hoseung Yoon
+# Last Modified: 2025.11.13
+
 OUT=sim_out
 
 rm -rf $OUT
