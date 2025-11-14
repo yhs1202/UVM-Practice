@@ -7,5 +7,5 @@
 +incdir+./tb/
 
 // TOP module file Specification
-// ./rtl/adder_clk.sv
-// ./tb/tb_top.sv
+./rtl/adder.sv
+./tb/tb_top.sv
