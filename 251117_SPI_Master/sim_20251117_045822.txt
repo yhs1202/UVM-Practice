@@ -1,0 +1,693 @@
+Command: /home/hedu31/UVM-Practice/251117_SPI_Master/sim_out/./simv +fsdbfile+wave.fsdb -l ../sim_20251117_045822.txt
+Chronologic VCS simulator copyright 1991-2024
+Contains Synopsys proprietary information.
+Compiler version W-2024.09-SP1_Full64; Runtime version W-2024.09-SP1_Full64;  Nov 17 04:58 2025
+UVM_INFO /tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_root.svh(402) @ 0: reporter [UVM/RELNOTES] 
+----------------------------------------------------------------
+UVM-1.2.Synopsys
+(C) 2007-2014 Mentor Graphics Corporation
+(C) 2007-2014 Cadence Design Systems, Inc.
+(C) 2006-2014 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+(C) 2013-2014 NVIDIA Corporation
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO @ 0: reporter [RNTST] Running test spi_test...
+*Verdi* Loading libsscore_vcs202409.so
+FSDB Dumper for VCS, Release Verdi_W-2024.09-SP2, Linux x86_64/64bit, 03/03/2025
+(C) 1996 - 2025 by Synopsys, Inc.
+*Verdi* : Create FSDB file 'wave.fsdb'
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* : End of traversing.
+UVM_INFO /tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_root.svh(589) @ 0: reporter [UVMTOP] UVM testbench topology:
+--------------------------------------------------------------
+Name                       Type                    Size  Value
+--------------------------------------------------------------
+uvm_test_top               spi_test                -     @342 
+  env                      spi_env                 -     @361 
+    agt                    spi_agent               -     @370 
+      drv                  spi_driver              -     @536 
+        rsp_port           uvm_analysis_port       -     @555 
+        seq_item_port      uvm_seq_item_pull_port  -     @545 
+      mon                  spi_monitor             -     @565 
+        send               uvm_analysis_port       -     @574 
+      sqr                  uvm_sequencer           -     @399 
+        rsp_export         uvm_analysis_export     -     @408 
+        seq_item_export    uvm_seq_item_pull_imp   -     @526 
+        arbitration_queue  array                   0     -    
+        lock_queue         array                   0     -    
+        num_last_reqs      integral                32    'd1  
+        num_last_rsps      integral                32    'd1  
+    scb                    spi_scoreboard          -     @379 
+      recv                 uvm_analysis_imp        -     @388 
+--------------------------------------------------------------
+
+
+UVM_INFO ./tb/sequence.sv(18) @ 0: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: 24
+UVM_INFO ./tb/driver.sv(36) @ 8515000: uvm_test_top.env.agt.drv [DRV] TX: 24
+UVM_INFO ./tb/monitor.sv(32) @ 8515000: uvm_test_top.env.agt.mon [MON] TX: 24, RX: 24
+UVM_INFO ./tb/scoreboard.sv(20) @ 8515000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: 24 -> RX: 24
+UVM_INFO ./tb/scoreboard.sv(23) @ 8515000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 8515000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: 3d
+UVM_INFO ./tb/driver.sv(36) @ 17035000: uvm_test_top.env.agt.drv [DRV] TX: 3d
+UVM_INFO ./tb/monitor.sv(32) @ 17035000: uvm_test_top.env.agt.mon [MON] TX: 3d, RX: 3d
+UVM_INFO ./tb/scoreboard.sv(20) @ 17035000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: 3d -> RX: 3d
+UVM_INFO ./tb/scoreboard.sv(23) @ 17035000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 17035000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: af
+UVM_INFO ./tb/driver.sv(36) @ 25555000: uvm_test_top.env.agt.drv [DRV] TX: af
+UVM_INFO ./tb/monitor.sv(32) @ 25555000: uvm_test_top.env.agt.mon [MON] TX: af, RX: af
+UVM_INFO ./tb/scoreboard.sv(20) @ 25555000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: af -> RX: af
+UVM_INFO ./tb/scoreboard.sv(23) @ 25555000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 25555000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: f5
+UVM_INFO ./tb/driver.sv(36) @ 34075000: uvm_test_top.env.agt.drv [DRV] TX: f5
+UVM_INFO ./tb/monitor.sv(32) @ 34075000: uvm_test_top.env.agt.mon [MON] TX: f5, RX: f5
+UVM_INFO ./tb/scoreboard.sv(20) @ 34075000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: f5 -> RX: f5
+UVM_INFO ./tb/scoreboard.sv(23) @ 34075000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 34075000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: 47
+UVM_INFO ./tb/driver.sv(36) @ 42595000: uvm_test_top.env.agt.drv [DRV] TX: 47
+UVM_INFO ./tb/monitor.sv(32) @ 42595000: uvm_test_top.env.agt.mon [MON] TX: 47, RX: 47
+UVM_INFO ./tb/scoreboard.sv(20) @ 42595000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: 47 -> RX: 47
+UVM_INFO ./tb/scoreboard.sv(23) @ 42595000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 42595000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: 72
+UVM_INFO ./tb/driver.sv(36) @ 51115000: uvm_test_top.env.agt.drv [DRV] TX: 72
+UVM_INFO ./tb/monitor.sv(32) @ 51115000: uvm_test_top.env.agt.mon [MON] TX: 72, RX: 72
+UVM_INFO ./tb/scoreboard.sv(20) @ 51115000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: 72 -> RX: 72
+UVM_INFO ./tb/scoreboard.sv(23) @ 51115000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 51115000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: b6
+UVM_INFO ./tb/driver.sv(36) @ 59635000: uvm_test_top.env.agt.drv [DRV] TX: b6
+UVM_INFO ./tb/monitor.sv(32) @ 59635000: uvm_test_top.env.agt.mon [MON] TX: b6, RX: b6
+UVM_INFO ./tb/scoreboard.sv(20) @ 59635000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: b6 -> RX: b6
+UVM_INFO ./tb/scoreboard.sv(23) @ 59635000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 59635000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: b5
+UVM_INFO ./tb/driver.sv(36) @ 68155000: uvm_test_top.env.agt.drv [DRV] TX: b5
+UVM_INFO ./tb/monitor.sv(32) @ 68155000: uvm_test_top.env.agt.mon [MON] TX: b5, RX: b5
+UVM_INFO ./tb/scoreboard.sv(20) @ 68155000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: b5 -> RX: b5
+UVM_INFO ./tb/scoreboard.sv(23) @ 68155000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 68155000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: 49
+UVM_INFO ./tb/driver.sv(36) @ 76675000: uvm_test_top.env.agt.drv [DRV] TX: 49
+UVM_INFO ./tb/monitor.sv(32) @ 76675000: uvm_test_top.env.agt.mon [MON] TX: 49, RX: 49
+UVM_INFO ./tb/scoreboard.sv(20) @ 76675000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: 49 -> RX: 49
+UVM_INFO ./tb/scoreboard.sv(23) @ 76675000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 76675000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: 8f
+UVM_INFO ./tb/driver.sv(36) @ 85195000: uvm_test_top.env.agt.drv [DRV] TX: 8f
+UVM_INFO ./tb/monitor.sv(32) @ 85195000: uvm_test_top.env.agt.mon [MON] TX: 8f, RX: 8f
+UVM_INFO ./tb/scoreboard.sv(20) @ 85195000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: 8f -> RX: 8f
+UVM_INFO ./tb/scoreboard.sv(23) @ 85195000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 85195000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: f2
+UVM_INFO ./tb/driver.sv(36) @ 93715000: uvm_test_top.env.agt.drv [DRV] TX: f2
+UVM_INFO ./tb/monitor.sv(32) @ 93715000: uvm_test_top.env.agt.mon [MON] TX: f2, RX: f2
+UVM_INFO ./tb/scoreboard.sv(20) @ 93715000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: f2 -> RX: f2
+UVM_INFO ./tb/scoreboard.sv(23) @ 93715000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 93715000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: ec
+UVM_INFO ./tb/driver.sv(36) @ 102235000: uvm_test_top.env.agt.drv [DRV] TX: ec
+UVM_INFO ./tb/monitor.sv(32) @ 102235000: uvm_test_top.env.agt.mon [MON] TX: ec, RX: ec
+UVM_INFO ./tb/scoreboard.sv(20) @ 102235000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: ec -> RX: ec
+UVM_INFO ./tb/scoreboard.sv(23) @ 102235000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 102235000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: cf
+UVM_INFO ./tb/driver.sv(36) @ 110755000: uvm_test_top.env.agt.drv [DRV] TX: cf
+UVM_INFO ./tb/monitor.sv(32) @ 110755000: uvm_test_top.env.agt.mon [MON] TX: cf, RX: cf
+UVM_INFO ./tb/scoreboard.sv(20) @ 110755000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: cf -> RX: cf
+UVM_INFO ./tb/scoreboard.sv(23) @ 110755000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 110755000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: 8b
+UVM_INFO ./tb/driver.sv(36) @ 119275000: uvm_test_top.env.agt.drv [DRV] TX: 8b
+UVM_INFO ./tb/monitor.sv(32) @ 119275000: uvm_test_top.env.agt.mon [MON] TX: 8b, RX: 8b
+UVM_INFO ./tb/scoreboard.sv(20) @ 119275000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: 8b -> RX: 8b
+UVM_INFO ./tb/scoreboard.sv(23) @ 119275000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 119275000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: 7f
+UVM_INFO ./tb/driver.sv(36) @ 127795000: uvm_test_top.env.agt.drv [DRV] TX: 7f
+UVM_INFO ./tb/monitor.sv(32) @ 127795000: uvm_test_top.env.agt.mon [MON] TX: 7f, RX: 7f
+UVM_INFO ./tb/scoreboard.sv(20) @ 127795000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: 7f -> RX: 7f
+UVM_INFO ./tb/scoreboard.sv(23) @ 127795000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 127795000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: 1b
+UVM_INFO ./tb/driver.sv(36) @ 136315000: uvm_test_top.env.agt.drv [DRV] TX: 1b
+UVM_INFO ./tb/monitor.sv(32) @ 136315000: uvm_test_top.env.agt.mon [MON] TX: 1b, RX: 1b
+UVM_INFO ./tb/scoreboard.sv(20) @ 136315000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: 1b -> RX: 1b
+UVM_INFO ./tb/scoreboard.sv(23) @ 136315000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 136315000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: 4c
+UVM_INFO ./tb/driver.sv(36) @ 144835000: uvm_test_top.env.agt.drv [DRV] TX: 4c
+UVM_INFO ./tb/monitor.sv(32) @ 144835000: uvm_test_top.env.agt.mon [MON] TX: 4c, RX: 4c
+UVM_INFO ./tb/scoreboard.sv(20) @ 144835000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: 4c -> RX: 4c
+UVM_INFO ./tb/scoreboard.sv(23) @ 144835000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 144835000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: c5
+UVM_INFO ./tb/driver.sv(36) @ 153355000: uvm_test_top.env.agt.drv [DRV] TX: c5
+UVM_INFO ./tb/monitor.sv(32) @ 153355000: uvm_test_top.env.agt.mon [MON] TX: c5, RX: c5
+UVM_INFO ./tb/scoreboard.sv(20) @ 153355000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: c5 -> RX: c5
+UVM_INFO ./tb/scoreboard.sv(23) @ 153355000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 153355000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: 6a
+UVM_INFO ./tb/driver.sv(36) @ 161875000: uvm_test_top.env.agt.drv [DRV] TX: 6a
+UVM_INFO ./tb/monitor.sv(32) @ 161875000: uvm_test_top.env.agt.mon [MON] TX: 6a, RX: 6a
+UVM_INFO ./tb/scoreboard.sv(20) @ 161875000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: 6a -> RX: 6a
+UVM_INFO ./tb/scoreboard.sv(23) @ 161875000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 161875000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: 54
+UVM_INFO ./tb/driver.sv(36) @ 170395000: uvm_test_top.env.agt.drv [DRV] TX: 54
+UVM_INFO ./tb/monitor.sv(32) @ 170395000: uvm_test_top.env.agt.mon [MON] TX: 54, RX: 54
+UVM_INFO ./tb/scoreboard.sv(20) @ 170395000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: 54 -> RX: 54
+UVM_INFO ./tb/scoreboard.sv(23) @ 170395000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 170395000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: 4c
+UVM_INFO ./tb/driver.sv(36) @ 178915000: uvm_test_top.env.agt.drv [DRV] TX: 4c
+UVM_INFO ./tb/monitor.sv(32) @ 178915000: uvm_test_top.env.agt.mon [MON] TX: 4c, RX: 4c
+UVM_INFO ./tb/scoreboard.sv(20) @ 178915000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: 4c -> RX: 4c
+UVM_INFO ./tb/scoreboard.sv(23) @ 178915000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 178915000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: 5c
+UVM_INFO ./tb/driver.sv(36) @ 187435000: uvm_test_top.env.agt.drv [DRV] TX: 5c
+UVM_INFO ./tb/monitor.sv(32) @ 187435000: uvm_test_top.env.agt.mon [MON] TX: 5c, RX: 5c
+UVM_INFO ./tb/scoreboard.sv(20) @ 187435000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: 5c -> RX: 5c
+UVM_INFO ./tb/scoreboard.sv(23) @ 187435000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 187435000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: 38
+UVM_INFO ./tb/driver.sv(36) @ 195955000: uvm_test_top.env.agt.drv [DRV] TX: 38
+UVM_INFO ./tb/monitor.sv(32) @ 195955000: uvm_test_top.env.agt.mon [MON] TX: 38, RX: 38
+UVM_INFO ./tb/scoreboard.sv(20) @ 195955000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: 38 -> RX: 38
+UVM_INFO ./tb/scoreboard.sv(23) @ 195955000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 195955000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: 3e
+UVM_INFO ./tb/driver.sv(36) @ 204475000: uvm_test_top.env.agt.drv [DRV] TX: 3e
+UVM_INFO ./tb/monitor.sv(32) @ 204475000: uvm_test_top.env.agt.mon [MON] TX: 3e, RX: 3e
+UVM_INFO ./tb/scoreboard.sv(20) @ 204475000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: 3e -> RX: 3e
+UVM_INFO ./tb/scoreboard.sv(23) @ 204475000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 204475000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: 67
+UVM_INFO ./tb/driver.sv(36) @ 212995000: uvm_test_top.env.agt.drv [DRV] TX: 67
+UVM_INFO ./tb/monitor.sv(32) @ 212995000: uvm_test_top.env.agt.mon [MON] TX: 67, RX: 67
+UVM_INFO ./tb/scoreboard.sv(20) @ 212995000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: 67 -> RX: 67
+UVM_INFO ./tb/scoreboard.sv(23) @ 212995000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 212995000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: 87
+UVM_INFO ./tb/driver.sv(36) @ 221515000: uvm_test_top.env.agt.drv [DRV] TX: 87
+UVM_INFO ./tb/monitor.sv(32) @ 221515000: uvm_test_top.env.agt.mon [MON] TX: 87, RX: 87
+UVM_INFO ./tb/scoreboard.sv(20) @ 221515000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: 87 -> RX: 87
+UVM_INFO ./tb/scoreboard.sv(23) @ 221515000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 221515000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: f2
+UVM_INFO ./tb/driver.sv(36) @ 230035000: uvm_test_top.env.agt.drv [DRV] TX: f2
+UVM_INFO ./tb/monitor.sv(32) @ 230035000: uvm_test_top.env.agt.mon [MON] TX: f2, RX: f2
+UVM_INFO ./tb/scoreboard.sv(20) @ 230035000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: f2 -> RX: f2
+UVM_INFO ./tb/scoreboard.sv(23) @ 230035000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 230035000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: eb
+UVM_INFO ./tb/driver.sv(36) @ 238555000: uvm_test_top.env.agt.drv [DRV] TX: eb
+UVM_INFO ./tb/monitor.sv(32) @ 238555000: uvm_test_top.env.agt.mon [MON] TX: eb, RX: eb
+UVM_INFO ./tb/scoreboard.sv(20) @ 238555000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: eb -> RX: eb
+UVM_INFO ./tb/scoreboard.sv(23) @ 238555000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 238555000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: e5
+UVM_INFO ./tb/driver.sv(36) @ 247075000: uvm_test_top.env.agt.drv [DRV] TX: e5
+UVM_INFO ./tb/monitor.sv(32) @ 247075000: uvm_test_top.env.agt.mon [MON] TX: e5, RX: e5
+UVM_INFO ./tb/scoreboard.sv(20) @ 247075000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: e5 -> RX: e5
+UVM_INFO ./tb/scoreboard.sv(23) @ 247075000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 247075000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: 5d
+UVM_INFO ./tb/driver.sv(36) @ 255595000: uvm_test_top.env.agt.drv [DRV] TX: 5d
+UVM_INFO ./tb/monitor.sv(32) @ 255595000: uvm_test_top.env.agt.mon [MON] TX: 5d, RX: 5d
+UVM_INFO ./tb/scoreboard.sv(20) @ 255595000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: 5d -> RX: 5d
+UVM_INFO ./tb/scoreboard.sv(23) @ 255595000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 255595000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: 71
+UVM_INFO ./tb/driver.sv(36) @ 264115000: uvm_test_top.env.agt.drv [DRV] TX: 71
+UVM_INFO ./tb/monitor.sv(32) @ 264115000: uvm_test_top.env.agt.mon [MON] TX: 71, RX: 71
+UVM_INFO ./tb/scoreboard.sv(20) @ 264115000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: 71 -> RX: 71
+UVM_INFO ./tb/scoreboard.sv(23) @ 264115000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 264115000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: e0
+UVM_INFO ./tb/driver.sv(36) @ 272635000: uvm_test_top.env.agt.drv [DRV] TX: e0
+UVM_INFO ./tb/monitor.sv(32) @ 272635000: uvm_test_top.env.agt.mon [MON] TX: e0, RX: e0
+UVM_INFO ./tb/scoreboard.sv(20) @ 272635000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: e0 -> RX: e0
+UVM_INFO ./tb/scoreboard.sv(23) @ 272635000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 272635000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: 73
+UVM_INFO ./tb/driver.sv(36) @ 281155000: uvm_test_top.env.agt.drv [DRV] TX: 73
+UVM_INFO ./tb/monitor.sv(32) @ 281155000: uvm_test_top.env.agt.mon [MON] TX: 73, RX: 73
+UVM_INFO ./tb/scoreboard.sv(20) @ 281155000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: 73 -> RX: 73
+UVM_INFO ./tb/scoreboard.sv(23) @ 281155000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 281155000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: ef
+UVM_INFO ./tb/driver.sv(36) @ 289675000: uvm_test_top.env.agt.drv [DRV] TX: ef
+UVM_INFO ./tb/monitor.sv(32) @ 289675000: uvm_test_top.env.agt.mon [MON] TX: ef, RX: ef
+UVM_INFO ./tb/scoreboard.sv(20) @ 289675000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: ef -> RX: ef
+UVM_INFO ./tb/scoreboard.sv(23) @ 289675000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 289675000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: 22
+UVM_INFO ./tb/driver.sv(36) @ 298195000: uvm_test_top.env.agt.drv [DRV] TX: 22
+UVM_INFO ./tb/monitor.sv(32) @ 298195000: uvm_test_top.env.agt.mon [MON] TX: 22, RX: 22
+UVM_INFO ./tb/scoreboard.sv(20) @ 298195000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: 22 -> RX: 22
+UVM_INFO ./tb/scoreboard.sv(23) @ 298195000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 298195000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: f8
+UVM_INFO ./tb/driver.sv(36) @ 306715000: uvm_test_top.env.agt.drv [DRV] TX: f8
+UVM_INFO ./tb/monitor.sv(32) @ 306715000: uvm_test_top.env.agt.mon [MON] TX: f8, RX: f8
+UVM_INFO ./tb/scoreboard.sv(20) @ 306715000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: f8 -> RX: f8
+UVM_INFO ./tb/scoreboard.sv(23) @ 306715000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 306715000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: 3e
+UVM_INFO ./tb/driver.sv(36) @ 315235000: uvm_test_top.env.agt.drv [DRV] TX: 3e
+UVM_INFO ./tb/monitor.sv(32) @ 315235000: uvm_test_top.env.agt.mon [MON] TX: 3e, RX: 3e
+UVM_INFO ./tb/scoreboard.sv(20) @ 315235000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: 3e -> RX: 3e
+UVM_INFO ./tb/scoreboard.sv(23) @ 315235000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 315235000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: 94
+UVM_INFO ./tb/driver.sv(36) @ 323755000: uvm_test_top.env.agt.drv [DRV] TX: 94
+UVM_INFO ./tb/monitor.sv(32) @ 323755000: uvm_test_top.env.agt.mon [MON] TX: 94, RX: 94
+UVM_INFO ./tb/scoreboard.sv(20) @ 323755000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: 94 -> RX: 94
+UVM_INFO ./tb/scoreboard.sv(23) @ 323755000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 323755000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: 52
+UVM_INFO ./tb/driver.sv(36) @ 332275000: uvm_test_top.env.agt.drv [DRV] TX: 52
+UVM_INFO ./tb/monitor.sv(32) @ 332275000: uvm_test_top.env.agt.mon [MON] TX: 52, RX: 52
+UVM_INFO ./tb/scoreboard.sv(20) @ 332275000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: 52 -> RX: 52
+UVM_INFO ./tb/scoreboard.sv(23) @ 332275000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 332275000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: d0
+UVM_INFO ./tb/driver.sv(36) @ 340795000: uvm_test_top.env.agt.drv [DRV] TX: d0
+UVM_INFO ./tb/monitor.sv(32) @ 340795000: uvm_test_top.env.agt.mon [MON] TX: d0, RX: d0
+UVM_INFO ./tb/scoreboard.sv(20) @ 340795000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: d0 -> RX: d0
+UVM_INFO ./tb/scoreboard.sv(23) @ 340795000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 340795000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: 9c
+UVM_INFO ./tb/driver.sv(36) @ 349315000: uvm_test_top.env.agt.drv [DRV] TX: 9c
+UVM_INFO ./tb/monitor.sv(32) @ 349315000: uvm_test_top.env.agt.mon [MON] TX: 9c, RX: 9c
+UVM_INFO ./tb/scoreboard.sv(20) @ 349315000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: 9c -> RX: 9c
+UVM_INFO ./tb/scoreboard.sv(23) @ 349315000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 349315000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: a9
+UVM_INFO ./tb/driver.sv(36) @ 357835000: uvm_test_top.env.agt.drv [DRV] TX: a9
+UVM_INFO ./tb/monitor.sv(32) @ 357835000: uvm_test_top.env.agt.mon [MON] TX: a9, RX: a9
+UVM_INFO ./tb/scoreboard.sv(20) @ 357835000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: a9 -> RX: a9
+UVM_INFO ./tb/scoreboard.sv(23) @ 357835000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 357835000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: dd
+UVM_INFO ./tb/driver.sv(36) @ 366355000: uvm_test_top.env.agt.drv [DRV] TX: dd
+UVM_INFO ./tb/monitor.sv(32) @ 366355000: uvm_test_top.env.agt.mon [MON] TX: dd, RX: dd
+UVM_INFO ./tb/scoreboard.sv(20) @ 366355000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: dd -> RX: dd
+UVM_INFO ./tb/scoreboard.sv(23) @ 366355000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 366355000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: f9
+UVM_INFO ./tb/driver.sv(36) @ 374875000: uvm_test_top.env.agt.drv [DRV] TX: f9
+UVM_INFO ./tb/monitor.sv(32) @ 374875000: uvm_test_top.env.agt.mon [MON] TX: f9, RX: f9
+UVM_INFO ./tb/scoreboard.sv(20) @ 374875000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: f9 -> RX: f9
+UVM_INFO ./tb/scoreboard.sv(23) @ 374875000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 374875000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: 68
+UVM_INFO ./tb/driver.sv(36) @ 383395000: uvm_test_top.env.agt.drv [DRV] TX: 68
+UVM_INFO ./tb/monitor.sv(32) @ 383395000: uvm_test_top.env.agt.mon [MON] TX: 68, RX: 68
+UVM_INFO ./tb/scoreboard.sv(20) @ 383395000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: 68 -> RX: 68
+UVM_INFO ./tb/scoreboard.sv(23) @ 383395000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 383395000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: 13
+UVM_INFO ./tb/driver.sv(36) @ 391915000: uvm_test_top.env.agt.drv [DRV] TX: 13
+UVM_INFO ./tb/monitor.sv(32) @ 391915000: uvm_test_top.env.agt.mon [MON] TX: 13, RX: 13
+UVM_INFO ./tb/scoreboard.sv(20) @ 391915000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: 13 -> RX: 13
+UVM_INFO ./tb/scoreboard.sv(23) @ 391915000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 391915000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: a1
+UVM_INFO ./tb/driver.sv(36) @ 400435000: uvm_test_top.env.agt.drv [DRV] TX: a1
+UVM_INFO ./tb/monitor.sv(32) @ 400435000: uvm_test_top.env.agt.mon [MON] TX: a1, RX: a1
+UVM_INFO ./tb/scoreboard.sv(20) @ 400435000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: a1 -> RX: a1
+UVM_INFO ./tb/scoreboard.sv(23) @ 400435000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 400435000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: 58
+UVM_INFO ./tb/driver.sv(36) @ 408955000: uvm_test_top.env.agt.drv [DRV] TX: 58
+UVM_INFO ./tb/monitor.sv(32) @ 408955000: uvm_test_top.env.agt.mon [MON] TX: 58, RX: 58
+UVM_INFO ./tb/scoreboard.sv(20) @ 408955000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: 58 -> RX: 58
+UVM_INFO ./tb/scoreboard.sv(23) @ 408955000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 408955000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: a4
+UVM_INFO ./tb/driver.sv(36) @ 417475000: uvm_test_top.env.agt.drv [DRV] TX: a4
+UVM_INFO ./tb/monitor.sv(32) @ 417475000: uvm_test_top.env.agt.mon [MON] TX: a4, RX: a4
+UVM_INFO ./tb/scoreboard.sv(20) @ 417475000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: a4 -> RX: a4
+UVM_INFO ./tb/scoreboard.sv(23) @ 417475000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 417475000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: bf
+UVM_INFO ./tb/driver.sv(36) @ 425995000: uvm_test_top.env.agt.drv [DRV] TX: bf
+UVM_INFO ./tb/monitor.sv(32) @ 425995000: uvm_test_top.env.agt.mon [MON] TX: bf, RX: bf
+UVM_INFO ./tb/scoreboard.sv(20) @ 425995000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: bf -> RX: bf
+UVM_INFO ./tb/scoreboard.sv(23) @ 425995000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 425995000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: c2
+UVM_INFO ./tb/driver.sv(36) @ 434515000: uvm_test_top.env.agt.drv [DRV] TX: c2
+UVM_INFO ./tb/monitor.sv(32) @ 434515000: uvm_test_top.env.agt.mon [MON] TX: c2, RX: c2
+UVM_INFO ./tb/scoreboard.sv(20) @ 434515000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: c2 -> RX: c2
+UVM_INFO ./tb/scoreboard.sv(23) @ 434515000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 434515000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: 48
+UVM_INFO ./tb/driver.sv(36) @ 443035000: uvm_test_top.env.agt.drv [DRV] TX: 48
+UVM_INFO ./tb/monitor.sv(32) @ 443035000: uvm_test_top.env.agt.mon [MON] TX: 48, RX: 48
+UVM_INFO ./tb/scoreboard.sv(20) @ 443035000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: 48 -> RX: 48
+UVM_INFO ./tb/scoreboard.sv(23) @ 443035000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 443035000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: 53
+UVM_INFO ./tb/driver.sv(36) @ 451555000: uvm_test_top.env.agt.drv [DRV] TX: 53
+UVM_INFO ./tb/monitor.sv(32) @ 451555000: uvm_test_top.env.agt.mon [MON] TX: 53, RX: 53
+UVM_INFO ./tb/scoreboard.sv(20) @ 451555000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: 53 -> RX: 53
+UVM_INFO ./tb/scoreboard.sv(23) @ 451555000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 451555000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: c5
+UVM_INFO ./tb/driver.sv(36) @ 460075000: uvm_test_top.env.agt.drv [DRV] TX: c5
+UVM_INFO ./tb/monitor.sv(32) @ 460075000: uvm_test_top.env.agt.mon [MON] TX: c5, RX: c5
+UVM_INFO ./tb/scoreboard.sv(20) @ 460075000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: c5 -> RX: c5
+UVM_INFO ./tb/scoreboard.sv(23) @ 460075000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 460075000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: b8
+UVM_INFO ./tb/driver.sv(36) @ 468595000: uvm_test_top.env.agt.drv [DRV] TX: b8
+UVM_INFO ./tb/monitor.sv(32) @ 468595000: uvm_test_top.env.agt.mon [MON] TX: b8, RX: b8
+UVM_INFO ./tb/scoreboard.sv(20) @ 468595000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: b8 -> RX: b8
+UVM_INFO ./tb/scoreboard.sv(23) @ 468595000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 468595000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: da
+UVM_INFO ./tb/driver.sv(36) @ 477115000: uvm_test_top.env.agt.drv [DRV] TX: da
+UVM_INFO ./tb/monitor.sv(32) @ 477115000: uvm_test_top.env.agt.mon [MON] TX: da, RX: da
+UVM_INFO ./tb/scoreboard.sv(20) @ 477115000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: da -> RX: da
+UVM_INFO ./tb/scoreboard.sv(23) @ 477115000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 477115000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: cc
+UVM_INFO ./tb/driver.sv(36) @ 485635000: uvm_test_top.env.agt.drv [DRV] TX: cc
+UVM_INFO ./tb/monitor.sv(32) @ 485635000: uvm_test_top.env.agt.mon [MON] TX: cc, RX: cc
+UVM_INFO ./tb/scoreboard.sv(20) @ 485635000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: cc -> RX: cc
+UVM_INFO ./tb/scoreboard.sv(23) @ 485635000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 485635000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: 61
+UVM_INFO ./tb/driver.sv(36) @ 494155000: uvm_test_top.env.agt.drv [DRV] TX: 61
+UVM_INFO ./tb/monitor.sv(32) @ 494155000: uvm_test_top.env.agt.mon [MON] TX: 61, RX: 61
+UVM_INFO ./tb/scoreboard.sv(20) @ 494155000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: 61 -> RX: 61
+UVM_INFO ./tb/scoreboard.sv(23) @ 494155000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 494155000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: 21
+UVM_INFO ./tb/driver.sv(36) @ 502675000: uvm_test_top.env.agt.drv [DRV] TX: 21
+UVM_INFO ./tb/monitor.sv(32) @ 502675000: uvm_test_top.env.agt.mon [MON] TX: 21, RX: 21
+UVM_INFO ./tb/scoreboard.sv(20) @ 502675000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: 21 -> RX: 21
+UVM_INFO ./tb/scoreboard.sv(23) @ 502675000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 502675000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: 8
+UVM_INFO ./tb/driver.sv(36) @ 511195000: uvm_test_top.env.agt.drv [DRV] TX: 8
+UVM_INFO ./tb/monitor.sv(32) @ 511195000: uvm_test_top.env.agt.mon [MON] TX: 8, RX: 8
+UVM_INFO ./tb/scoreboard.sv(20) @ 511195000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: 8 -> RX: 8
+UVM_INFO ./tb/scoreboard.sv(23) @ 511195000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 511195000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: 84
+UVM_INFO ./tb/driver.sv(36) @ 519715000: uvm_test_top.env.agt.drv [DRV] TX: 84
+UVM_INFO ./tb/monitor.sv(32) @ 519715000: uvm_test_top.env.agt.mon [MON] TX: 84, RX: 84
+UVM_INFO ./tb/scoreboard.sv(20) @ 519715000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: 84 -> RX: 84
+UVM_INFO ./tb/scoreboard.sv(23) @ 519715000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 519715000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: 7f
+UVM_INFO ./tb/driver.sv(36) @ 528235000: uvm_test_top.env.agt.drv [DRV] TX: 7f
+UVM_INFO ./tb/monitor.sv(32) @ 528235000: uvm_test_top.env.agt.mon [MON] TX: 7f, RX: 7f
+UVM_INFO ./tb/scoreboard.sv(20) @ 528235000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: 7f -> RX: 7f
+UVM_INFO ./tb/scoreboard.sv(23) @ 528235000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 528235000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: a9
+UVM_INFO ./tb/driver.sv(36) @ 536755000: uvm_test_top.env.agt.drv [DRV] TX: a9
+UVM_INFO ./tb/monitor.sv(32) @ 536755000: uvm_test_top.env.agt.mon [MON] TX: a9, RX: a9
+UVM_INFO ./tb/scoreboard.sv(20) @ 536755000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: a9 -> RX: a9
+UVM_INFO ./tb/scoreboard.sv(23) @ 536755000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 536755000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: 4f
+UVM_INFO ./tb/driver.sv(36) @ 545275000: uvm_test_top.env.agt.drv [DRV] TX: 4f
+UVM_INFO ./tb/monitor.sv(32) @ 545275000: uvm_test_top.env.agt.mon [MON] TX: 4f, RX: 4f
+UVM_INFO ./tb/scoreboard.sv(20) @ 545275000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: 4f -> RX: 4f
+UVM_INFO ./tb/scoreboard.sv(23) @ 545275000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 545275000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: 62
+UVM_INFO ./tb/driver.sv(36) @ 553795000: uvm_test_top.env.agt.drv [DRV] TX: 62
+UVM_INFO ./tb/monitor.sv(32) @ 553795000: uvm_test_top.env.agt.mon [MON] TX: 62, RX: 62
+UVM_INFO ./tb/scoreboard.sv(20) @ 553795000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: 62 -> RX: 62
+UVM_INFO ./tb/scoreboard.sv(23) @ 553795000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 553795000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: e5
+UVM_INFO ./tb/driver.sv(36) @ 562315000: uvm_test_top.env.agt.drv [DRV] TX: e5
+UVM_INFO ./tb/monitor.sv(32) @ 562315000: uvm_test_top.env.agt.mon [MON] TX: e5, RX: e5
+UVM_INFO ./tb/scoreboard.sv(20) @ 562315000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: e5 -> RX: e5
+UVM_INFO ./tb/scoreboard.sv(23) @ 562315000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 562315000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: 4a
+UVM_INFO ./tb/driver.sv(36) @ 570835000: uvm_test_top.env.agt.drv [DRV] TX: 4a
+UVM_INFO ./tb/monitor.sv(32) @ 570835000: uvm_test_top.env.agt.mon [MON] TX: 4a, RX: 4a
+UVM_INFO ./tb/scoreboard.sv(20) @ 570835000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: 4a -> RX: 4a
+UVM_INFO ./tb/scoreboard.sv(23) @ 570835000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 570835000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: 1d
+UVM_INFO ./tb/driver.sv(36) @ 579355000: uvm_test_top.env.agt.drv [DRV] TX: 1d
+UVM_INFO ./tb/monitor.sv(32) @ 579355000: uvm_test_top.env.agt.mon [MON] TX: 1d, RX: 1d
+UVM_INFO ./tb/scoreboard.sv(20) @ 579355000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: 1d -> RX: 1d
+UVM_INFO ./tb/scoreboard.sv(23) @ 579355000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 579355000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: ba
+UVM_INFO ./tb/driver.sv(36) @ 587875000: uvm_test_top.env.agt.drv [DRV] TX: ba
+UVM_INFO ./tb/monitor.sv(32) @ 587875000: uvm_test_top.env.agt.mon [MON] TX: ba, RX: ba
+UVM_INFO ./tb/scoreboard.sv(20) @ 587875000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: ba -> RX: ba
+UVM_INFO ./tb/scoreboard.sv(23) @ 587875000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 587875000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: a1
+UVM_INFO ./tb/driver.sv(36) @ 596395000: uvm_test_top.env.agt.drv [DRV] TX: a1
+UVM_INFO ./tb/monitor.sv(32) @ 596395000: uvm_test_top.env.agt.mon [MON] TX: a1, RX: a1
+UVM_INFO ./tb/scoreboard.sv(20) @ 596395000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: a1 -> RX: a1
+UVM_INFO ./tb/scoreboard.sv(23) @ 596395000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 596395000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: fd
+UVM_INFO ./tb/driver.sv(36) @ 604915000: uvm_test_top.env.agt.drv [DRV] TX: fd
+UVM_INFO ./tb/monitor.sv(32) @ 604915000: uvm_test_top.env.agt.mon [MON] TX: fd, RX: fd
+UVM_INFO ./tb/scoreboard.sv(20) @ 604915000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: fd -> RX: fd
+UVM_INFO ./tb/scoreboard.sv(23) @ 604915000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 604915000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: 98
+UVM_INFO ./tb/driver.sv(36) @ 613435000: uvm_test_top.env.agt.drv [DRV] TX: 98
+UVM_INFO ./tb/monitor.sv(32) @ 613435000: uvm_test_top.env.agt.mon [MON] TX: 98, RX: 98
+UVM_INFO ./tb/scoreboard.sv(20) @ 613435000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: 98 -> RX: 98
+UVM_INFO ./tb/scoreboard.sv(23) @ 613435000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 613435000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: c5
+UVM_INFO ./tb/driver.sv(36) @ 621955000: uvm_test_top.env.agt.drv [DRV] TX: c5
+UVM_INFO ./tb/monitor.sv(32) @ 621955000: uvm_test_top.env.agt.mon [MON] TX: c5, RX: c5
+UVM_INFO ./tb/scoreboard.sv(20) @ 621955000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: c5 -> RX: c5
+UVM_INFO ./tb/scoreboard.sv(23) @ 621955000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 621955000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: b4
+UVM_INFO ./tb/driver.sv(36) @ 630475000: uvm_test_top.env.agt.drv [DRV] TX: b4
+UVM_INFO ./tb/monitor.sv(32) @ 630475000: uvm_test_top.env.agt.mon [MON] TX: b4, RX: b4
+UVM_INFO ./tb/scoreboard.sv(20) @ 630475000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: b4 -> RX: b4
+UVM_INFO ./tb/scoreboard.sv(23) @ 630475000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 630475000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: 37
+UVM_INFO ./tb/driver.sv(36) @ 638995000: uvm_test_top.env.agt.drv [DRV] TX: 37
+UVM_INFO ./tb/monitor.sv(32) @ 638995000: uvm_test_top.env.agt.mon [MON] TX: 37, RX: 37
+UVM_INFO ./tb/scoreboard.sv(20) @ 638995000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: 37 -> RX: 37
+UVM_INFO ./tb/scoreboard.sv(23) @ 638995000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 638995000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: aa
+UVM_INFO ./tb/driver.sv(36) @ 647515000: uvm_test_top.env.agt.drv [DRV] TX: aa
+UVM_INFO ./tb/monitor.sv(32) @ 647515000: uvm_test_top.env.agt.mon [MON] TX: aa, RX: aa
+UVM_INFO ./tb/scoreboard.sv(20) @ 647515000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: aa -> RX: aa
+UVM_INFO ./tb/scoreboard.sv(23) @ 647515000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 647515000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: 3d
+UVM_INFO ./tb/driver.sv(36) @ 656035000: uvm_test_top.env.agt.drv [DRV] TX: 3d
+UVM_INFO ./tb/monitor.sv(32) @ 656035000: uvm_test_top.env.agt.mon [MON] TX: 3d, RX: 3d
+UVM_INFO ./tb/scoreboard.sv(20) @ 656035000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: 3d -> RX: 3d
+UVM_INFO ./tb/scoreboard.sv(23) @ 656035000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 656035000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: 46
+UVM_INFO ./tb/driver.sv(36) @ 664555000: uvm_test_top.env.agt.drv [DRV] TX: 46
+UVM_INFO ./tb/monitor.sv(32) @ 664555000: uvm_test_top.env.agt.mon [MON] TX: 46, RX: 46
+UVM_INFO ./tb/scoreboard.sv(20) @ 664555000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: 46 -> RX: 46
+UVM_INFO ./tb/scoreboard.sv(23) @ 664555000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 664555000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: 8e
+UVM_INFO ./tb/driver.sv(36) @ 673075000: uvm_test_top.env.agt.drv [DRV] TX: 8e
+UVM_INFO ./tb/monitor.sv(32) @ 673075000: uvm_test_top.env.agt.mon [MON] TX: 8e, RX: 8e
+UVM_INFO ./tb/scoreboard.sv(20) @ 673075000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: 8e -> RX: 8e
+UVM_INFO ./tb/scoreboard.sv(23) @ 673075000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 673075000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: 15
+UVM_INFO ./tb/driver.sv(36) @ 681595000: uvm_test_top.env.agt.drv [DRV] TX: 15
+UVM_INFO ./tb/monitor.sv(32) @ 681595000: uvm_test_top.env.agt.mon [MON] TX: 15, RX: 15
+UVM_INFO ./tb/scoreboard.sv(20) @ 681595000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: 15 -> RX: 15
+UVM_INFO ./tb/scoreboard.sv(23) @ 681595000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 681595000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: 3a
+UVM_INFO ./tb/driver.sv(36) @ 690115000: uvm_test_top.env.agt.drv [DRV] TX: 3a
+UVM_INFO ./tb/monitor.sv(32) @ 690115000: uvm_test_top.env.agt.mon [MON] TX: 3a, RX: 3a
+UVM_INFO ./tb/scoreboard.sv(20) @ 690115000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: 3a -> RX: 3a
+UVM_INFO ./tb/scoreboard.sv(23) @ 690115000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 690115000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: 5c
+UVM_INFO ./tb/driver.sv(36) @ 698635000: uvm_test_top.env.agt.drv [DRV] TX: 5c
+UVM_INFO ./tb/monitor.sv(32) @ 698635000: uvm_test_top.env.agt.mon [MON] TX: 5c, RX: 5c
+UVM_INFO ./tb/scoreboard.sv(20) @ 698635000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: 5c -> RX: 5c
+UVM_INFO ./tb/scoreboard.sv(23) @ 698635000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 698635000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: bf
+UVM_INFO ./tb/driver.sv(36) @ 707155000: uvm_test_top.env.agt.drv [DRV] TX: bf
+UVM_INFO ./tb/monitor.sv(32) @ 707155000: uvm_test_top.env.agt.mon [MON] TX: bf, RX: bf
+UVM_INFO ./tb/scoreboard.sv(20) @ 707155000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: bf -> RX: bf
+UVM_INFO ./tb/scoreboard.sv(23) @ 707155000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 707155000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: 9f
+UVM_INFO ./tb/driver.sv(36) @ 715675000: uvm_test_top.env.agt.drv [DRV] TX: 9f
+UVM_INFO ./tb/monitor.sv(32) @ 715675000: uvm_test_top.env.agt.mon [MON] TX: 9f, RX: 9f
+UVM_INFO ./tb/scoreboard.sv(20) @ 715675000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: 9f -> RX: 9f
+UVM_INFO ./tb/scoreboard.sv(23) @ 715675000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 715675000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: 6e
+UVM_INFO ./tb/driver.sv(36) @ 724195000: uvm_test_top.env.agt.drv [DRV] TX: 6e
+UVM_INFO ./tb/monitor.sv(32) @ 724195000: uvm_test_top.env.agt.mon [MON] TX: 6e, RX: 6e
+UVM_INFO ./tb/scoreboard.sv(20) @ 724195000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: 6e -> RX: 6e
+UVM_INFO ./tb/scoreboard.sv(23) @ 724195000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 724195000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: e
+UVM_INFO ./tb/driver.sv(36) @ 732715000: uvm_test_top.env.agt.drv [DRV] TX: e
+UVM_INFO ./tb/monitor.sv(32) @ 732715000: uvm_test_top.env.agt.mon [MON] TX: e, RX: e
+UVM_INFO ./tb/scoreboard.sv(20) @ 732715000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: e -> RX: e
+UVM_INFO ./tb/scoreboard.sv(23) @ 732715000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 732715000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: 2a
+UVM_INFO ./tb/driver.sv(36) @ 741235000: uvm_test_top.env.agt.drv [DRV] TX: 2a
+UVM_INFO ./tb/monitor.sv(32) @ 741235000: uvm_test_top.env.agt.mon [MON] TX: 2a, RX: 2a
+UVM_INFO ./tb/scoreboard.sv(20) @ 741235000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: 2a -> RX: 2a
+UVM_INFO ./tb/scoreboard.sv(23) @ 741235000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 741235000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: af
+UVM_INFO ./tb/driver.sv(36) @ 749755000: uvm_test_top.env.agt.drv [DRV] TX: af
+UVM_INFO ./tb/monitor.sv(32) @ 749755000: uvm_test_top.env.agt.mon [MON] TX: af, RX: af
+UVM_INFO ./tb/scoreboard.sv(20) @ 749755000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: af -> RX: af
+UVM_INFO ./tb/scoreboard.sv(23) @ 749755000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 749755000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: f2
+UVM_INFO ./tb/driver.sv(36) @ 758275000: uvm_test_top.env.agt.drv [DRV] TX: f2
+UVM_INFO ./tb/monitor.sv(32) @ 758275000: uvm_test_top.env.agt.mon [MON] TX: f2, RX: f2
+UVM_INFO ./tb/scoreboard.sv(20) @ 758275000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: f2 -> RX: f2
+UVM_INFO ./tb/scoreboard.sv(23) @ 758275000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 758275000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: e1
+UVM_INFO ./tb/driver.sv(36) @ 766795000: uvm_test_top.env.agt.drv [DRV] TX: e1
+UVM_INFO ./tb/monitor.sv(32) @ 766795000: uvm_test_top.env.agt.mon [MON] TX: e1, RX: e1
+UVM_INFO ./tb/scoreboard.sv(20) @ 766795000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: e1 -> RX: e1
+UVM_INFO ./tb/scoreboard.sv(23) @ 766795000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 766795000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: 99
+UVM_INFO ./tb/driver.sv(36) @ 775315000: uvm_test_top.env.agt.drv [DRV] TX: 99
+UVM_INFO ./tb/monitor.sv(32) @ 775315000: uvm_test_top.env.agt.mon [MON] TX: 99, RX: 99
+UVM_INFO ./tb/scoreboard.sv(20) @ 775315000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: 99 -> RX: 99
+UVM_INFO ./tb/scoreboard.sv(23) @ 775315000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 775315000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: 16
+UVM_INFO ./tb/driver.sv(36) @ 783835000: uvm_test_top.env.agt.drv [DRV] TX: 16
+UVM_INFO ./tb/monitor.sv(32) @ 783835000: uvm_test_top.env.agt.mon [MON] TX: 16, RX: 16
+UVM_INFO ./tb/scoreboard.sv(20) @ 783835000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: 16 -> RX: 16
+UVM_INFO ./tb/scoreboard.sv(23) @ 783835000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 783835000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: a0
+UVM_INFO ./tb/driver.sv(36) @ 792355000: uvm_test_top.env.agt.drv [DRV] TX: a0
+UVM_INFO ./tb/monitor.sv(32) @ 792355000: uvm_test_top.env.agt.mon [MON] TX: a0, RX: a0
+UVM_INFO ./tb/scoreboard.sv(20) @ 792355000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: a0 -> RX: a0
+UVM_INFO ./tb/scoreboard.sv(23) @ 792355000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 792355000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: 6f
+UVM_INFO ./tb/driver.sv(36) @ 800875000: uvm_test_top.env.agt.drv [DRV] TX: 6f
+UVM_INFO ./tb/monitor.sv(32) @ 800875000: uvm_test_top.env.agt.mon [MON] TX: 6f, RX: 6f
+UVM_INFO ./tb/scoreboard.sv(20) @ 800875000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: 6f -> RX: 6f
+UVM_INFO ./tb/scoreboard.sv(23) @ 800875000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 800875000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: ba
+UVM_INFO ./tb/driver.sv(36) @ 809395000: uvm_test_top.env.agt.drv [DRV] TX: ba
+UVM_INFO ./tb/monitor.sv(32) @ 809395000: uvm_test_top.env.agt.mon [MON] TX: ba, RX: ba
+UVM_INFO ./tb/scoreboard.sv(20) @ 809395000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: ba -> RX: ba
+UVM_INFO ./tb/scoreboard.sv(23) @ 809395000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 809395000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: f3
+UVM_INFO ./tb/driver.sv(36) @ 817915000: uvm_test_top.env.agt.drv [DRV] TX: f3
+UVM_INFO ./tb/monitor.sv(32) @ 817915000: uvm_test_top.env.agt.mon [MON] TX: f3, RX: f3
+UVM_INFO ./tb/scoreboard.sv(20) @ 817915000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: f3 -> RX: f3
+UVM_INFO ./tb/scoreboard.sv(23) @ 817915000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 817915000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: d
+UVM_INFO ./tb/driver.sv(36) @ 826435000: uvm_test_top.env.agt.drv [DRV] TX: d
+UVM_INFO ./tb/monitor.sv(32) @ 826435000: uvm_test_top.env.agt.mon [MON] TX: d, RX: d
+UVM_INFO ./tb/scoreboard.sv(20) @ 826435000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: d -> RX: d
+UVM_INFO ./tb/scoreboard.sv(23) @ 826435000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 826435000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: 4f
+UVM_INFO ./tb/driver.sv(36) @ 834955000: uvm_test_top.env.agt.drv [DRV] TX: 4f
+UVM_INFO ./tb/monitor.sv(32) @ 834955000: uvm_test_top.env.agt.mon [MON] TX: 4f, RX: 4f
+UVM_INFO ./tb/scoreboard.sv(20) @ 834955000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: 4f -> RX: 4f
+UVM_INFO ./tb/scoreboard.sv(23) @ 834955000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 834955000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: 5e
+UVM_INFO ./tb/driver.sv(36) @ 843475000: uvm_test_top.env.agt.drv [DRV] TX: 5e
+UVM_INFO ./tb/monitor.sv(32) @ 843475000: uvm_test_top.env.agt.mon [MON] TX: 5e, RX: 5e
+UVM_INFO ./tb/scoreboard.sv(20) @ 843475000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: 5e -> RX: 5e
+UVM_INFO ./tb/scoreboard.sv(23) @ 843475000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+
+UVM_INFO ./tb/sequence.sv(18) @ 843475000: uvm_test_top.env.agt.sqr@@seq [seq] seq item to driver tx_data: 37
+UVM_INFO ./tb/driver.sv(36) @ 851995000: uvm_test_top.env.agt.drv [DRV] TX: 37
+UVM_INFO ./tb/monitor.sv(32) @ 851995000: uvm_test_top.env.agt.mon [MON] TX: 37, RX: 37
+UVM_INFO ./tb/scoreboard.sv(20) @ 851995000: uvm_test_top.env.scb [scb] [SCOREBOARD] TX: 37 -> RX: 37
+UVM_INFO ./tb/scoreboard.sv(23) @ 851995000: uvm_test_top.env.scb [scb] *** TEST PASSED ***
+UVM_INFO /tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_objection.svh(1276) @ 851995000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO /tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_report_catcher.svh(705) @ 851995000: reporter [UVM/REPORT/CATCHER] 
+--- UVM Report catcher Summary ---
+
+
+Number of demoted UVM_FATAL reports  :    0
+Number of demoted UVM_ERROR reports  :    0
+Number of demoted UVM_WARNING reports:    0
+Number of caught UVM_FATAL reports   :    0
+Number of caught UVM_ERROR reports   :    0
+Number of caught UVM_WARNING reports :    0
+
+UVM_INFO /tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_report_server.svh(904) @ 851995000: reporter [UVM/REPORT/SERVER] 
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :  505
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[DRV]   100
+[MON]   100
+[RNTST]     1
+[TEST_DONE]     1
+[UVM/RELNOTES]     1
+[UVM/REPORT/CATCHER]     1
+[UVMTOP]     1
+[scb]   200
+[seq]   100
+
+$finish called from file "/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_root.svh", line 527.
+$finish at simulation time            851995000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 851995000 ps
+CPU Time:      0.310 seconds;       Data structure size:   0.6Mb
+Mon Nov 17 04:58:31 2025
