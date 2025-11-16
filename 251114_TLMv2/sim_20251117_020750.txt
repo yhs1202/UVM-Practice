@@ -1,0 +1,166 @@
+Command: /home/hedu31/UVM-Practice/251114_TLMv2/sim_out/./simv +fsdbfile+wave.fsdb -l ../sim_20251117_020750.txt
+Chronologic VCS simulator copyright 1991-2024
+Contains Synopsys proprietary information.
+Compiler version W-2024.09-SP1_Full64; Runtime version W-2024.09-SP1_Full64;  Nov 17 02:07 2025
+UVM_INFO /tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_root.svh(402) @ 0: reporter [UVM/RELNOTES] 
+----------------------------------------------------------------
+UVM-1.2.Synopsys
+(C) 2007-2014 Mentor Graphics Corporation
+(C) 2007-2014 Cadence Design Systems, Inc.
+(C) 2006-2014 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+(C) 2013-2014 NVIDIA Corporation
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO @ 0: reporter [RNTST] Running test test...
+*Verdi* Loading libsscore_vcs202409.so
+FSDB Dumper for VCS, Release Verdi_W-2024.09-SP2, Linux x86_64/64bit, 03/03/2025
+(C) 1996 - 2025 by Synopsys, Inc.
+*Verdi* : Create FSDB file 'wave.fsdb'
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* : End of traversing.
+UVM_INFO /tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_root.svh(589) @ 0: reporter [UVMTOP] UVM testbench topology:
+--------------------------------------------
+Name          Type               Size  Value
+--------------------------------------------
+uvm_test_top  test               -     @337 
+  env         environment        -     @350 
+    a         comp_a             -     @359 
+      send    uvm_analysis_port  -     @395 
+    b         comp_b             -     @368 
+      recv    uvm_analysis_imp   -     @409 
+    c         comp_c             -     @377 
+      recv    uvm_analysis_imp   -     @419 
+    d         comp_d             -     @386 
+      recv    uvm_analysis_imp   -     @429 
+--------------------------------------------
+
+UVM_INFO ./tb/comp_b.sv(40) @ 0: uvm_test_top.env.b [comp_b] Received transaction via write(): write=1, addr= 1c, wdata=e85b2e65
+transaction: (transaction@405) { write: 'h1  addr: 'h1c  wdata: 'he85b2e65  } 
+UVM_INFO ./tb/comp_c.sv(40) @ 0: uvm_test_top.env.c [comp_c] Received transaction via write(): write=1, addr= 1c, wdata=e85b2e65
+transaction: (transaction@405) { write: 'h1  addr: 'h1c  wdata: 'he85b2e65  } 
+UVM_INFO ./tb/comp_d.sv(40) @ 0: uvm_test_top.env.d [comp_d] Received transaction via write(): write=1, addr= 1c, wdata=e85b2e65
+transaction: (transaction@405) { write: 'h1  addr: 'h1c  wdata: 'he85b2e65  } 
+UVM_INFO ./tb/comp_a.sv(41) @ 0: uvm_test_top.env.a [comp_a] Sent transaction: write=1, addr= 1c, wdata=e85b2e65
+transaction: (transaction@405) { write: 'h1  addr: 'h1c  wdata: 'he85b2e65  } 
+UVM_INFO ./tb/comp_b.sv(40) @ 0: uvm_test_top.env.b [comp_b] Received transaction via write(): write=1, addr= 7, wdata=c8441582
+transaction: (transaction@405) { write: 'h1  addr: 'h7  wdata: 'hc8441582  } 
+UVM_INFO ./tb/comp_c.sv(40) @ 0: uvm_test_top.env.c [comp_c] Received transaction via write(): write=1, addr= 7, wdata=c8441582
+transaction: (transaction@405) { write: 'h1  addr: 'h7  wdata: 'hc8441582  } 
+UVM_INFO ./tb/comp_d.sv(40) @ 0: uvm_test_top.env.d [comp_d] Received transaction via write(): write=1, addr= 7, wdata=c8441582
+transaction: (transaction@405) { write: 'h1  addr: 'h7  wdata: 'hc8441582  } 
+UVM_INFO ./tb/comp_a.sv(41) @ 0: uvm_test_top.env.a [comp_a] Sent transaction: write=1, addr= 7, wdata=c8441582
+transaction: (transaction@405) { write: 'h1  addr: 'h7  wdata: 'hc8441582  } 
+UVM_INFO ./tb/comp_b.sv(40) @ 0: uvm_test_top.env.b [comp_b] Received transaction via write(): write=0, addr= c5, wdata=7595146d
+transaction: (transaction@405) { write: 'h0  addr: 'hc5  wdata: 'h7595146d  } 
+UVM_INFO ./tb/comp_c.sv(40) @ 0: uvm_test_top.env.c [comp_c] Received transaction via write(): write=0, addr= c5, wdata=7595146d
+transaction: (transaction@405) { write: 'h0  addr: 'hc5  wdata: 'h7595146d  } 
+UVM_INFO ./tb/comp_d.sv(40) @ 0: uvm_test_top.env.d [comp_d] Received transaction via write(): write=0, addr= c5, wdata=7595146d
+transaction: (transaction@405) { write: 'h0  addr: 'hc5  wdata: 'h7595146d  } 
+UVM_INFO ./tb/comp_a.sv(41) @ 0: uvm_test_top.env.a [comp_a] Sent transaction: write=0, addr= c5, wdata=7595146d
+transaction: (transaction@405) { write: 'h0  addr: 'hc5  wdata: 'h7595146d  } 
+UVM_INFO ./tb/comp_b.sv(40) @ 0: uvm_test_top.env.b [comp_b] Received transaction via write(): write=0, addr= 3b, wdata=44bba7f5
+transaction: (transaction@405) { write: 'h0  addr: 'h3b  wdata: 'h44bba7f5  } 
+UVM_INFO ./tb/comp_c.sv(40) @ 0: uvm_test_top.env.c [comp_c] Received transaction via write(): write=0, addr= 3b, wdata=44bba7f5
+transaction: (transaction@405) { write: 'h0  addr: 'h3b  wdata: 'h44bba7f5  } 
+UVM_INFO ./tb/comp_d.sv(40) @ 0: uvm_test_top.env.d [comp_d] Received transaction via write(): write=0, addr= 3b, wdata=44bba7f5
+transaction: (transaction@405) { write: 'h0  addr: 'h3b  wdata: 'h44bba7f5  } 
+UVM_INFO ./tb/comp_a.sv(41) @ 0: uvm_test_top.env.a [comp_a] Sent transaction: write=0, addr= 3b, wdata=44bba7f5
+transaction: (transaction@405) { write: 'h0  addr: 'h3b  wdata: 'h44bba7f5  } 
+UVM_INFO ./tb/comp_b.sv(40) @ 0: uvm_test_top.env.b [comp_b] Received transaction via write(): write=0, addr= a6, wdata=27e0443a
+transaction: (transaction@405) { write: 'h0  addr: 'ha6  wdata: 'h27e0443a  } 
+UVM_INFO ./tb/comp_c.sv(40) @ 0: uvm_test_top.env.c [comp_c] Received transaction via write(): write=0, addr= a6, wdata=27e0443a
+transaction: (transaction@405) { write: 'h0  addr: 'ha6  wdata: 'h27e0443a  } 
+UVM_INFO ./tb/comp_d.sv(40) @ 0: uvm_test_top.env.d [comp_d] Received transaction via write(): write=0, addr= a6, wdata=27e0443a
+transaction: (transaction@405) { write: 'h0  addr: 'ha6  wdata: 'h27e0443a  } 
+UVM_INFO ./tb/comp_a.sv(41) @ 0: uvm_test_top.env.a [comp_a] Sent transaction: write=0, addr= a6, wdata=27e0443a
+transaction: (transaction@405) { write: 'h0  addr: 'ha6  wdata: 'h27e0443a  } 
+UVM_INFO ./tb/comp_b.sv(40) @ 0: uvm_test_top.env.b [comp_b] Received transaction via write(): write=0, addr= 99, wdata=dc91f5a8
+transaction: (transaction@405) { write: 'h0  addr: 'h99  wdata: 'hdc91f5a8  } 
+UVM_INFO ./tb/comp_c.sv(40) @ 0: uvm_test_top.env.c [comp_c] Received transaction via write(): write=0, addr= 99, wdata=dc91f5a8
+transaction: (transaction@405) { write: 'h0  addr: 'h99  wdata: 'hdc91f5a8  } 
+UVM_INFO ./tb/comp_d.sv(40) @ 0: uvm_test_top.env.d [comp_d] Received transaction via write(): write=0, addr= 99, wdata=dc91f5a8
+transaction: (transaction@405) { write: 'h0  addr: 'h99  wdata: 'hdc91f5a8  } 
+UVM_INFO ./tb/comp_a.sv(41) @ 0: uvm_test_top.env.a [comp_a] Sent transaction: write=0, addr= 99, wdata=dc91f5a8
+transaction: (transaction@405) { write: 'h0  addr: 'h99  wdata: 'hdc91f5a8  } 
+UVM_INFO ./tb/comp_b.sv(40) @ 0: uvm_test_top.env.b [comp_b] Received transaction via write(): write=1, addr= 20, wdata=b4ceea8d
+transaction: (transaction@405) { write: 'h1  addr: 'h20  wdata: 'hb4ceea8d  } 
+UVM_INFO ./tb/comp_c.sv(40) @ 0: uvm_test_top.env.c [comp_c] Received transaction via write(): write=1, addr= 20, wdata=b4ceea8d
+transaction: (transaction@405) { write: 'h1  addr: 'h20  wdata: 'hb4ceea8d  } 
+UVM_INFO ./tb/comp_d.sv(40) @ 0: uvm_test_top.env.d [comp_d] Received transaction via write(): write=1, addr= 20, wdata=b4ceea8d
+transaction: (transaction@405) { write: 'h1  addr: 'h20  wdata: 'hb4ceea8d  } 
+UVM_INFO ./tb/comp_a.sv(41) @ 0: uvm_test_top.env.a [comp_a] Sent transaction: write=1, addr= 20, wdata=b4ceea8d
+transaction: (transaction@405) { write: 'h1  addr: 'h20  wdata: 'hb4ceea8d  } 
+UVM_INFO ./tb/comp_b.sv(40) @ 0: uvm_test_top.env.b [comp_b] Received transaction via write(): write=1, addr= 3, wdata=d81fa48e
+transaction: (transaction@405) { write: 'h1  addr: 'h3  wdata: 'hd81fa48e  } 
+UVM_INFO ./tb/comp_c.sv(40) @ 0: uvm_test_top.env.c [comp_c] Received transaction via write(): write=1, addr= 3, wdata=d81fa48e
+transaction: (transaction@405) { write: 'h1  addr: 'h3  wdata: 'hd81fa48e  } 
+UVM_INFO ./tb/comp_d.sv(40) @ 0: uvm_test_top.env.d [comp_d] Received transaction via write(): write=1, addr= 3, wdata=d81fa48e
+transaction: (transaction@405) { write: 'h1  addr: 'h3  wdata: 'hd81fa48e  } 
+UVM_INFO ./tb/comp_a.sv(41) @ 0: uvm_test_top.env.a [comp_a] Sent transaction: write=1, addr= 3, wdata=d81fa48e
+transaction: (transaction@405) { write: 'h1  addr: 'h3  wdata: 'hd81fa48e  } 
+UVM_INFO ./tb/comp_b.sv(40) @ 0: uvm_test_top.env.b [comp_b] Received transaction via write(): write=1, addr= 2b, wdata=8ba90e04
+transaction: (transaction@405) { write: 'h1  addr: 'h2b  wdata: 'h8ba90e04  } 
+UVM_INFO ./tb/comp_c.sv(40) @ 0: uvm_test_top.env.c [comp_c] Received transaction via write(): write=1, addr= 2b, wdata=8ba90e04
+transaction: (transaction@405) { write: 'h1  addr: 'h2b  wdata: 'h8ba90e04  } 
+UVM_INFO ./tb/comp_d.sv(40) @ 0: uvm_test_top.env.d [comp_d] Received transaction via write(): write=1, addr= 2b, wdata=8ba90e04
+transaction: (transaction@405) { write: 'h1  addr: 'h2b  wdata: 'h8ba90e04  } 
+UVM_INFO ./tb/comp_a.sv(41) @ 0: uvm_test_top.env.a [comp_a] Sent transaction: write=1, addr= 2b, wdata=8ba90e04
+transaction: (transaction@405) { write: 'h1  addr: 'h2b  wdata: 'h8ba90e04  } 
+UVM_INFO ./tb/comp_b.sv(40) @ 0: uvm_test_top.env.b [comp_b] Received transaction via write(): write=0, addr= 77, wdata=e1be78a8
+transaction: (transaction@405) { write: 'h0  addr: 'h77  wdata: 'he1be78a8  } 
+UVM_INFO ./tb/comp_c.sv(40) @ 0: uvm_test_top.env.c [comp_c] Received transaction via write(): write=0, addr= 77, wdata=e1be78a8
+transaction: (transaction@405) { write: 'h0  addr: 'h77  wdata: 'he1be78a8  } 
+UVM_INFO ./tb/comp_d.sv(40) @ 0: uvm_test_top.env.d [comp_d] Received transaction via write(): write=0, addr= 77, wdata=e1be78a8
+transaction: (transaction@405) { write: 'h0  addr: 'h77  wdata: 'he1be78a8  } 
+UVM_INFO ./tb/comp_a.sv(41) @ 0: uvm_test_top.env.a [comp_a] Sent transaction: write=0, addr= 77, wdata=e1be78a8
+transaction: (transaction@405) { write: 'h0  addr: 'h77  wdata: 'he1be78a8  } 
+UVM_INFO /tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_objection.svh(1276) @ 0: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO /tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_report_catcher.svh(705) @ 0: reporter [UVM/REPORT/CATCHER] 
+--- UVM Report catcher Summary ---
+
+
+Number of demoted UVM_FATAL reports  :    0
+Number of demoted UVM_ERROR reports  :    0
+Number of demoted UVM_WARNING reports:    0
+Number of caught UVM_FATAL reports   :    0
+Number of caught UVM_ERROR reports   :    0
+Number of caught UVM_WARNING reports :    0
+
+UVM_INFO /tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_report_server.svh(904) @ 0: reporter [UVM/REPORT/SERVER] 
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :   45
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[RNTST]     1
+[TEST_DONE]     1
+[UVM/RELNOTES]     1
+[UVM/REPORT/CATCHER]     1
+[UVMTOP]     1
+[comp_a]    10
+[comp_b]    10
+[comp_c]    10
+[comp_d]    10
+
+$finish called from file "/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_root.svh", line 527.
+$finish at simulation time                    0
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 0 ps
+CPU Time:      0.220 seconds;       Data structure size:   0.5Mb
+Mon Nov 17 02:07:59 2025

@@ -1,0 +1,1393 @@
+Command: /home/hedu31/UVM-Practice/251113_adder_clk/sim_out/./simv +fsdbfile+wave.fsdb -l ../sim_20251117_021235.txt
+Chronologic VCS simulator copyright 1991-2024
+Contains Synopsys proprietary information.
+Compiler version W-2024.09-SP1_Full64; Runtime version W-2024.09-SP1_Full64;  Nov 17 02:12 2025
+UVM_INFO /tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_root.svh(402) @ 0: reporter [UVM/RELNOTES] 
+----------------------------------------------------------------
+UVM-1.2.Synopsys
+(C) 2007-2014 Mentor Graphics Corporation
+(C) 2007-2014 Cadence Design Systems, Inc.
+(C) 2006-2014 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+(C) 2013-2014 NVIDIA Corporation
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO @ 0: reporter [RNTST] Running test test...
+*Verdi* Loading libsscore_vcs202409.so
+FSDB Dumper for VCS, Release Verdi_W-2024.09-SP2, Linux x86_64/64bit, 03/03/2025
+(C) 1996 - 2025 by Synopsys, Inc.
+*Verdi* : Create FSDB file 'wave.fsdb'
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* : End of traversing.
+UVM_INFO /tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_root.svh(589) @ 0: reporter [UVMTOP] UVM testbench topology:
+--------------------------------------------------------------
+Name                       Type                    Size  Value
+--------------------------------------------------------------
+uvm_test_top               test                    -     @342 
+  env                      adder_environment       -     @355 
+    agt                    adder_agent             -     @370 
+      drv                  adder_driver            -     @536 
+        rsp_port           uvm_analysis_port       -     @555 
+        seq_item_port      uvm_seq_item_pull_port  -     @545 
+      mon                  adder_monitor           -     @565 
+        WRITE              uvm_analysis_port       -     @574 
+      sqr                  uvm_sequencer           -     @399 
+        rsp_export         uvm_analysis_export     -     @408 
+        seq_item_export    uvm_seq_item_pull_imp   -     @526 
+        arbitration_queue  array                   0     -    
+        lock_queue         array                   0     -    
+        num_last_reqs      integral                32    'd1  
+        num_last_rsps      integral                32    'd1  
+    scb                    adder_scoreboard        -     @379 
+      READ                 uvm_analysis_imp        -     @388 
+--------------------------------------------------------------
+
+UVM_INFO ./tb/sequence.sv(25) @ 10000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 0: a=83, b=57
+UVM_INFO ./tb/driver.sv(44) @ 15000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=83, b=57
+UVM_INFO ./tb/monitor.sv(44) @ 25000: uvm_test_top.env.agt.mon [MON] Monitoring: a=0, b=0, y=0
+UVM_INFO ./tb/scoreboard.sv(33) @ 25000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=0, b=0, y=0
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'h0  
+  b   integral  8     'h0  
+  y   integral  9     'h0  
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 25000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 25000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 1: a=28, b=170
+UVM_INFO ./tb/driver.sv(44) @ 35000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=28, b=170
+UVM_INFO ./tb/monitor.sv(44) @ 45000: uvm_test_top.env.agt.mon [MON] Monitoring: a=83, b=57, y=140
+UVM_INFO ./tb/scoreboard.sv(33) @ 45000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=83, b=57, y=140
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'h53 
+  b   integral  8     'h39 
+  y   integral  9     'h8c 
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 45000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 45000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 2: a=233, b=63
+UVM_INFO ./tb/driver.sv(44) @ 55000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=233, b=63
+UVM_INFO ./tb/monitor.sv(44) @ 65000: uvm_test_top.env.agt.mon [MON] Monitoring: a=28, b=170, y=198
+UVM_INFO ./tb/scoreboard.sv(33) @ 65000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=28, b=170, y=198
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'h1c 
+  b   integral  8     'haa 
+  y   integral  9     'hc6 
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 65000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 65000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 3: a=62, b=200
+UVM_INFO ./tb/driver.sv(44) @ 75000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=62, b=200
+UVM_INFO ./tb/monitor.sv(44) @ 85000: uvm_test_top.env.agt.mon [MON] Monitoring: a=233, b=63, y=296
+UVM_INFO ./tb/scoreboard.sv(33) @ 85000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=233, b=63, y=296
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'he9 
+  b   integral  8     'h3f 
+  y   integral  9     'h128
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 85000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 85000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 4: a=167, b=223
+UVM_INFO ./tb/driver.sv(44) @ 95000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=167, b=223
+UVM_INFO ./tb/monitor.sv(44) @ 105000: uvm_test_top.env.agt.mon [MON] Monitoring: a=62, b=200, y=262
+UVM_INFO ./tb/scoreboard.sv(33) @ 105000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=62, b=200, y=262
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'h3e 
+  b   integral  8     'hc8 
+  y   integral  9     'h106
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 105000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 105000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 5: a=32, b=233
+UVM_INFO ./tb/driver.sv(44) @ 115000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=32, b=233
+UVM_INFO ./tb/monitor.sv(44) @ 125000: uvm_test_top.env.agt.mon [MON] Monitoring: a=167, b=223, y=390
+UVM_INFO ./tb/scoreboard.sv(33) @ 125000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=167, b=223, y=390
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'ha7 
+  b   integral  8     'hdf 
+  y   integral  9     'h186
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 125000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 125000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 6: a=222, b=71
+UVM_INFO ./tb/driver.sv(44) @ 135000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=222, b=71
+UVM_INFO ./tb/monitor.sv(44) @ 145000: uvm_test_top.env.agt.mon [MON] Monitoring: a=32, b=233, y=265
+UVM_INFO ./tb/scoreboard.sv(33) @ 145000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=32, b=233, y=265
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'h20 
+  b   integral  8     'he9 
+  y   integral  9     'h109
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 145000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 145000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 7: a=219, b=130
+UVM_INFO ./tb/driver.sv(44) @ 155000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=219, b=130
+UVM_INFO ./tb/monitor.sv(44) @ 165000: uvm_test_top.env.agt.mon [MON] Monitoring: a=222, b=71, y=293
+UVM_INFO ./tb/scoreboard.sv(33) @ 165000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=222, b=71, y=293
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'hde 
+  b   integral  8     'h47 
+  y   integral  9     'h125
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 165000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 165000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 8: a=125, b=0
+UVM_INFO ./tb/driver.sv(44) @ 175000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=125, b=0
+UVM_INFO ./tb/monitor.sv(44) @ 185000: uvm_test_top.env.agt.mon [MON] Monitoring: a=219, b=130, y=349
+UVM_INFO ./tb/scoreboard.sv(33) @ 185000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=219, b=130, y=349
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'hdb 
+  b   integral  8     'h82 
+  y   integral  9     'h15d
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 185000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 185000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 9: a=110, b=89
+UVM_INFO ./tb/driver.sv(44) @ 195000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=110, b=89
+UVM_INFO ./tb/monitor.sv(44) @ 205000: uvm_test_top.env.agt.mon [MON] Monitoring: a=125, b=0, y=125
+UVM_INFO ./tb/scoreboard.sv(33) @ 205000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=125, b=0, y=125
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'h7d 
+  b   integral  8     'h0  
+  y   integral  9     'h7d 
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 205000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 205000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 10: a=156, b=118
+UVM_INFO ./tb/driver.sv(44) @ 215000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=156, b=118
+UVM_INFO ./tb/monitor.sv(44) @ 225000: uvm_test_top.env.agt.mon [MON] Monitoring: a=110, b=89, y=199
+UVM_INFO ./tb/scoreboard.sv(33) @ 225000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=110, b=89, y=199
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'h6e 
+  b   integral  8     'h59 
+  y   integral  9     'hc7 
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 225000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 225000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 11: a=166, b=211
+UVM_INFO ./tb/driver.sv(44) @ 235000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=166, b=211
+UVM_INFO ./tb/monitor.sv(44) @ 245000: uvm_test_top.env.agt.mon [MON] Monitoring: a=156, b=118, y=274
+UVM_INFO ./tb/scoreboard.sv(33) @ 245000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=156, b=118, y=274
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'h9c 
+  b   integral  8     'h76 
+  y   integral  9     'h112
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 245000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 245000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 12: a=48, b=77
+UVM_INFO ./tb/driver.sv(44) @ 255000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=48, b=77
+UVM_INFO ./tb/monitor.sv(44) @ 265000: uvm_test_top.env.agt.mon [MON] Monitoring: a=166, b=211, y=377
+UVM_INFO ./tb/scoreboard.sv(33) @ 265000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=166, b=211, y=377
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'ha6 
+  b   integral  8     'hd3 
+  y   integral  9     'h179
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 265000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 265000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 13: a=135, b=98
+UVM_INFO ./tb/driver.sv(44) @ 275000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=135, b=98
+UVM_INFO ./tb/monitor.sv(44) @ 285000: uvm_test_top.env.agt.mon [MON] Monitoring: a=48, b=77, y=125
+UVM_INFO ./tb/scoreboard.sv(33) @ 285000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=48, b=77, y=125
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'h30 
+  b   integral  8     'h4d 
+  y   integral  9     'h7d 
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 285000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 285000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 14: a=99, b=16
+UVM_INFO ./tb/driver.sv(44) @ 295000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=99, b=16
+UVM_INFO ./tb/monitor.sv(44) @ 305000: uvm_test_top.env.agt.mon [MON] Monitoring: a=135, b=98, y=233
+UVM_INFO ./tb/scoreboard.sv(33) @ 305000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=135, b=98, y=233
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'h87 
+  b   integral  8     'h62 
+  y   integral  9     'he9 
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 305000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 305000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 15: a=159, b=151
+UVM_INFO ./tb/driver.sv(44) @ 315000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=159, b=151
+UVM_INFO ./tb/monitor.sv(44) @ 325000: uvm_test_top.env.agt.mon [MON] Monitoring: a=99, b=16, y=115
+UVM_INFO ./tb/scoreboard.sv(33) @ 325000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=99, b=16, y=115
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'h63 
+  b   integral  8     'h10 
+  y   integral  9     'h73 
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 325000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 325000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 16: a=193, b=111
+UVM_INFO ./tb/driver.sv(44) @ 335000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=193, b=111
+UVM_INFO ./tb/monitor.sv(44) @ 345000: uvm_test_top.env.agt.mon [MON] Monitoring: a=159, b=151, y=310
+UVM_INFO ./tb/scoreboard.sv(33) @ 345000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=159, b=151, y=310
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'h9f 
+  b   integral  8     'h97 
+  y   integral  9     'h136
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 345000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 345000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 17: a=55, b=101
+UVM_INFO ./tb/driver.sv(44) @ 355000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=55, b=101
+UVM_INFO ./tb/monitor.sv(44) @ 365000: uvm_test_top.env.agt.mon [MON] Monitoring: a=193, b=111, y=304
+UVM_INFO ./tb/scoreboard.sv(33) @ 365000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=193, b=111, y=304
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'hc1 
+  b   integral  8     'h6f 
+  y   integral  9     'h130
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 365000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 365000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 18: a=229, b=78
+UVM_INFO ./tb/driver.sv(44) @ 375000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=229, b=78
+UVM_INFO ./tb/monitor.sv(44) @ 385000: uvm_test_top.env.agt.mon [MON] Monitoring: a=55, b=101, y=156
+UVM_INFO ./tb/scoreboard.sv(33) @ 385000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=55, b=101, y=156
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'h37 
+  b   integral  8     'h65 
+  y   integral  9     'h9c 
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 385000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 385000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 19: a=22, b=184
+UVM_INFO ./tb/driver.sv(44) @ 395000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=22, b=184
+UVM_INFO ./tb/monitor.sv(44) @ 405000: uvm_test_top.env.agt.mon [MON] Monitoring: a=229, b=78, y=307
+UVM_INFO ./tb/scoreboard.sv(33) @ 405000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=229, b=78, y=307
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'he5 
+  b   integral  8     'h4e 
+  y   integral  9     'h133
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 405000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 405000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 20: a=198, b=155
+UVM_INFO ./tb/driver.sv(44) @ 415000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=198, b=155
+UVM_INFO ./tb/monitor.sv(44) @ 425000: uvm_test_top.env.agt.mon [MON] Monitoring: a=22, b=184, y=206
+UVM_INFO ./tb/scoreboard.sv(33) @ 425000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=22, b=184, y=206
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'h16 
+  b   integral  8     'hb8 
+  y   integral  9     'hce 
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 425000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 425000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 21: a=157, b=184
+UVM_INFO ./tb/driver.sv(44) @ 435000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=157, b=184
+UVM_INFO ./tb/monitor.sv(44) @ 445000: uvm_test_top.env.agt.mon [MON] Monitoring: a=198, b=155, y=353
+UVM_INFO ./tb/scoreboard.sv(33) @ 445000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=198, b=155, y=353
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'hc6 
+  b   integral  8     'h9b 
+  y   integral  9     'h161
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 445000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 445000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 22: a=136, b=127
+UVM_INFO ./tb/driver.sv(44) @ 455000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=136, b=127
+UVM_INFO ./tb/monitor.sv(44) @ 465000: uvm_test_top.env.agt.mon [MON] Monitoring: a=157, b=184, y=341
+UVM_INFO ./tb/scoreboard.sv(33) @ 465000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=157, b=184, y=341
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'h9d 
+  b   integral  8     'hb8 
+  y   integral  9     'h155
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 465000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 465000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 23: a=129, b=45
+UVM_INFO ./tb/driver.sv(44) @ 475000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=129, b=45
+UVM_INFO ./tb/monitor.sv(44) @ 485000: uvm_test_top.env.agt.mon [MON] Monitoring: a=136, b=127, y=263
+UVM_INFO ./tb/scoreboard.sv(33) @ 485000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=136, b=127, y=263
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'h88 
+  b   integral  8     'h7f 
+  y   integral  9     'h107
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 485000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 485000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 24: a=168, b=176
+UVM_INFO ./tb/driver.sv(44) @ 495000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=168, b=176
+UVM_INFO ./tb/monitor.sv(44) @ 505000: uvm_test_top.env.agt.mon [MON] Monitoring: a=129, b=45, y=174
+UVM_INFO ./tb/scoreboard.sv(33) @ 505000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=129, b=45, y=174
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'h81 
+  b   integral  8     'h2d 
+  y   integral  9     'hae 
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 505000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 505000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 25: a=206, b=105
+UVM_INFO ./tb/driver.sv(44) @ 515000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=206, b=105
+UVM_INFO ./tb/monitor.sv(44) @ 525000: uvm_test_top.env.agt.mon [MON] Monitoring: a=168, b=176, y=344
+UVM_INFO ./tb/scoreboard.sv(33) @ 525000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=168, b=176, y=344
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'ha8 
+  b   integral  8     'hb0 
+  y   integral  9     'h158
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 525000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 525000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 26: a=254, b=32
+UVM_INFO ./tb/driver.sv(44) @ 535000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=254, b=32
+UVM_INFO ./tb/monitor.sv(44) @ 545000: uvm_test_top.env.agt.mon [MON] Monitoring: a=206, b=105, y=311
+UVM_INFO ./tb/scoreboard.sv(33) @ 545000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=206, b=105, y=311
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'hce 
+  b   integral  8     'h69 
+  y   integral  9     'h137
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 545000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 545000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 27: a=185, b=193
+UVM_INFO ./tb/driver.sv(44) @ 555000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=185, b=193
+UVM_INFO ./tb/monitor.sv(44) @ 565000: uvm_test_top.env.agt.mon [MON] Monitoring: a=254, b=32, y=286
+UVM_INFO ./tb/scoreboard.sv(33) @ 565000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=254, b=32, y=286
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'hfe 
+  b   integral  8     'h20 
+  y   integral  9     'h11e
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 565000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 565000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 28: a=85, b=3
+UVM_INFO ./tb/driver.sv(44) @ 575000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=85, b=3
+UVM_INFO ./tb/monitor.sv(44) @ 585000: uvm_test_top.env.agt.mon [MON] Monitoring: a=185, b=193, y=378
+UVM_INFO ./tb/scoreboard.sv(33) @ 585000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=185, b=193, y=378
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'hb9 
+  b   integral  8     'hc1 
+  y   integral  9     'h17a
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 585000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 585000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 29: a=88, b=101
+UVM_INFO ./tb/driver.sv(44) @ 595000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=88, b=101
+UVM_INFO ./tb/monitor.sv(44) @ 605000: uvm_test_top.env.agt.mon [MON] Monitoring: a=85, b=3, y=88
+UVM_INFO ./tb/scoreboard.sv(33) @ 605000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=85, b=3, y=88
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'h55 
+  b   integral  8     'h3  
+  y   integral  9     'h58 
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 605000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 605000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 30: a=120, b=245
+UVM_INFO ./tb/driver.sv(44) @ 615000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=120, b=245
+UVM_INFO ./tb/monitor.sv(44) @ 625000: uvm_test_top.env.agt.mon [MON] Monitoring: a=88, b=101, y=189
+UVM_INFO ./tb/scoreboard.sv(33) @ 625000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=88, b=101, y=189
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'h58 
+  b   integral  8     'h65 
+  y   integral  9     'hbd 
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 625000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 625000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 31: a=13, b=95
+UVM_INFO ./tb/driver.sv(44) @ 635000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=13, b=95
+UVM_INFO ./tb/monitor.sv(44) @ 645000: uvm_test_top.env.agt.mon [MON] Monitoring: a=120, b=245, y=365
+UVM_INFO ./tb/scoreboard.sv(33) @ 645000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=120, b=245, y=365
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'h78 
+  b   integral  8     'hf5 
+  y   integral  9     'h16d
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 645000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 645000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 32: a=171, b=34
+UVM_INFO ./tb/driver.sv(44) @ 655000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=171, b=34
+UVM_INFO ./tb/monitor.sv(44) @ 665000: uvm_test_top.env.agt.mon [MON] Monitoring: a=13, b=95, y=108
+UVM_INFO ./tb/scoreboard.sv(33) @ 665000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=13, b=95, y=108
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'hd  
+  b   integral  8     'h5f 
+  y   integral  9     'h6c 
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 665000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 665000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 33: a=97, b=152
+UVM_INFO ./tb/driver.sv(44) @ 675000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=97, b=152
+UVM_INFO ./tb/monitor.sv(44) @ 685000: uvm_test_top.env.agt.mon [MON] Monitoring: a=171, b=34, y=205
+UVM_INFO ./tb/scoreboard.sv(33) @ 685000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=171, b=34, y=205
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'hab 
+  b   integral  8     'h22 
+  y   integral  9     'hcd 
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 685000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 685000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 34: a=230, b=155
+UVM_INFO ./tb/driver.sv(44) @ 695000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=230, b=155
+UVM_INFO ./tb/monitor.sv(44) @ 705000: uvm_test_top.env.agt.mon [MON] Monitoring: a=97, b=152, y=249
+UVM_INFO ./tb/scoreboard.sv(33) @ 705000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=97, b=152, y=249
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'h61 
+  b   integral  8     'h98 
+  y   integral  9     'hf9 
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 705000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 705000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 35: a=177, b=65
+UVM_INFO ./tb/driver.sv(44) @ 715000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=177, b=65
+UVM_INFO ./tb/monitor.sv(44) @ 725000: uvm_test_top.env.agt.mon [MON] Monitoring: a=230, b=155, y=385
+UVM_INFO ./tb/scoreboard.sv(33) @ 725000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=230, b=155, y=385
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'he6 
+  b   integral  8     'h9b 
+  y   integral  9     'h181
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 725000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 725000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 36: a=122, b=119
+UVM_INFO ./tb/driver.sv(44) @ 735000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=122, b=119
+UVM_INFO ./tb/monitor.sv(44) @ 745000: uvm_test_top.env.agt.mon [MON] Monitoring: a=177, b=65, y=242
+UVM_INFO ./tb/scoreboard.sv(33) @ 745000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=177, b=65, y=242
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'hb1 
+  b   integral  8     'h41 
+  y   integral  9     'hf2 
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 745000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 745000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 37: a=44, b=195
+UVM_INFO ./tb/driver.sv(44) @ 755000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=44, b=195
+UVM_INFO ./tb/monitor.sv(44) @ 765000: uvm_test_top.env.agt.mon [MON] Monitoring: a=122, b=119, y=241
+UVM_INFO ./tb/scoreboard.sv(33) @ 765000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=122, b=119, y=241
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'h7a 
+  b   integral  8     'h77 
+  y   integral  9     'hf1 
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 765000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 765000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 38: a=245, b=9
+UVM_INFO ./tb/driver.sv(44) @ 775000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=245, b=9
+UVM_INFO ./tb/monitor.sv(44) @ 785000: uvm_test_top.env.agt.mon [MON] Monitoring: a=44, b=195, y=239
+UVM_INFO ./tb/scoreboard.sv(33) @ 785000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=44, b=195, y=239
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'h2c 
+  b   integral  8     'hc3 
+  y   integral  9     'hef 
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 785000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 785000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 39: a=198, b=59
+UVM_INFO ./tb/driver.sv(44) @ 795000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=198, b=59
+UVM_INFO ./tb/monitor.sv(44) @ 805000: uvm_test_top.env.agt.mon [MON] Monitoring: a=245, b=9, y=254
+UVM_INFO ./tb/scoreboard.sv(33) @ 805000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=245, b=9, y=254
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'hf5 
+  b   integral  8     'h9  
+  y   integral  9     'hfe 
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 805000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 805000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 40: a=118, b=100
+UVM_INFO ./tb/driver.sv(44) @ 815000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=118, b=100
+UVM_INFO ./tb/monitor.sv(44) @ 825000: uvm_test_top.env.agt.mon [MON] Monitoring: a=198, b=59, y=257
+UVM_INFO ./tb/scoreboard.sv(33) @ 825000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=198, b=59, y=257
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'hc6 
+  b   integral  8     'h3b 
+  y   integral  9     'h101
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 825000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 825000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 41: a=189, b=75
+UVM_INFO ./tb/driver.sv(44) @ 835000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=189, b=75
+UVM_INFO ./tb/monitor.sv(44) @ 845000: uvm_test_top.env.agt.mon [MON] Monitoring: a=118, b=100, y=218
+UVM_INFO ./tb/scoreboard.sv(33) @ 845000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=118, b=100, y=218
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'h76 
+  b   integral  8     'h64 
+  y   integral  9     'hda 
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 845000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 845000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 42: a=61, b=55
+UVM_INFO ./tb/driver.sv(44) @ 855000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=61, b=55
+UVM_INFO ./tb/monitor.sv(44) @ 865000: uvm_test_top.env.agt.mon [MON] Monitoring: a=189, b=75, y=264
+UVM_INFO ./tb/scoreboard.sv(33) @ 865000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=189, b=75, y=264
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'hbd 
+  b   integral  8     'h4b 
+  y   integral  9     'h108
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 865000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 865000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 43: a=143, b=213
+UVM_INFO ./tb/driver.sv(44) @ 875000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=143, b=213
+UVM_INFO ./tb/monitor.sv(44) @ 885000: uvm_test_top.env.agt.mon [MON] Monitoring: a=61, b=55, y=116
+UVM_INFO ./tb/scoreboard.sv(33) @ 885000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=61, b=55, y=116
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'h3d 
+  b   integral  8     'h37 
+  y   integral  9     'h74 
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 885000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 885000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 44: a=215, b=183
+UVM_INFO ./tb/driver.sv(44) @ 895000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=215, b=183
+UVM_INFO ./tb/monitor.sv(44) @ 905000: uvm_test_top.env.agt.mon [MON] Monitoring: a=143, b=213, y=356
+UVM_INFO ./tb/scoreboard.sv(33) @ 905000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=143, b=213, y=356
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'h8f 
+  b   integral  8     'hd5 
+  y   integral  9     'h164
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 905000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 905000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 45: a=232, b=134
+UVM_INFO ./tb/driver.sv(44) @ 915000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=232, b=134
+UVM_INFO ./tb/monitor.sv(44) @ 925000: uvm_test_top.env.agt.mon [MON] Monitoring: a=215, b=183, y=398
+UVM_INFO ./tb/scoreboard.sv(33) @ 925000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=215, b=183, y=398
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'hd7 
+  b   integral  8     'hb7 
+  y   integral  9     'h18e
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 925000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 925000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 46: a=114, b=218
+UVM_INFO ./tb/driver.sv(44) @ 935000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=114, b=218
+UVM_INFO ./tb/monitor.sv(44) @ 945000: uvm_test_top.env.agt.mon [MON] Monitoring: a=232, b=134, y=366
+UVM_INFO ./tb/scoreboard.sv(33) @ 945000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=232, b=134, y=366
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'he8 
+  b   integral  8     'h86 
+  y   integral  9     'h16e
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 945000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 945000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 47: a=19, b=242
+UVM_INFO ./tb/driver.sv(44) @ 955000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=19, b=242
+UVM_INFO ./tb/monitor.sv(44) @ 965000: uvm_test_top.env.agt.mon [MON] Monitoring: a=114, b=218, y=332
+UVM_INFO ./tb/scoreboard.sv(33) @ 965000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=114, b=218, y=332
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'h72 
+  b   integral  8     'hda 
+  y   integral  9     'h14c
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 965000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 965000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 48: a=59, b=153
+UVM_INFO ./tb/driver.sv(44) @ 975000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=59, b=153
+UVM_INFO ./tb/monitor.sv(44) @ 985000: uvm_test_top.env.agt.mon [MON] Monitoring: a=19, b=242, y=261
+UVM_INFO ./tb/scoreboard.sv(33) @ 985000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=19, b=242, y=261
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'h13 
+  b   integral  8     'hf2 
+  y   integral  9     'h105
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 985000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 985000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 49: a=54, b=56
+UVM_INFO ./tb/driver.sv(44) @ 995000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=54, b=56
+UVM_INFO ./tb/monitor.sv(44) @ 1005000: uvm_test_top.env.agt.mon [MON] Monitoring: a=59, b=153, y=212
+UVM_INFO ./tb/scoreboard.sv(33) @ 1005000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=59, b=153, y=212
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'h3b 
+  b   integral  8     'h99 
+  y   integral  9     'hd4 
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 1005000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 1005000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 50: a=118, b=213
+UVM_INFO ./tb/driver.sv(44) @ 1015000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=118, b=213
+UVM_INFO ./tb/monitor.sv(44) @ 1025000: uvm_test_top.env.agt.mon [MON] Monitoring: a=54, b=56, y=110
+UVM_INFO ./tb/scoreboard.sv(33) @ 1025000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=54, b=56, y=110
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'h36 
+  b   integral  8     'h38 
+  y   integral  9     'h6e 
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 1025000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 1025000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 51: a=4, b=154
+UVM_INFO ./tb/driver.sv(44) @ 1035000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=4, b=154
+UVM_INFO ./tb/monitor.sv(44) @ 1045000: uvm_test_top.env.agt.mon [MON] Monitoring: a=118, b=213, y=331
+UVM_INFO ./tb/scoreboard.sv(33) @ 1045000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=118, b=213, y=331
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'h76 
+  b   integral  8     'hd5 
+  y   integral  9     'h14b
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 1045000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 1045000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 52: a=177, b=97
+UVM_INFO ./tb/driver.sv(44) @ 1055000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=177, b=97
+UVM_INFO ./tb/monitor.sv(44) @ 1065000: uvm_test_top.env.agt.mon [MON] Monitoring: a=4, b=154, y=158
+UVM_INFO ./tb/scoreboard.sv(33) @ 1065000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=4, b=154, y=158
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'h4  
+  b   integral  8     'h9a 
+  y   integral  9     'h9e 
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 1065000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 1065000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 53: a=98, b=32
+UVM_INFO ./tb/driver.sv(44) @ 1075000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=98, b=32
+UVM_INFO ./tb/monitor.sv(44) @ 1085000: uvm_test_top.env.agt.mon [MON] Monitoring: a=177, b=97, y=274
+UVM_INFO ./tb/scoreboard.sv(33) @ 1085000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=177, b=97, y=274
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'hb1 
+  b   integral  8     'h61 
+  y   integral  9     'h112
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 1085000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 1085000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 54: a=4, b=46
+UVM_INFO ./tb/driver.sv(44) @ 1095000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=4, b=46
+UVM_INFO ./tb/monitor.sv(44) @ 1105000: uvm_test_top.env.agt.mon [MON] Monitoring: a=98, b=32, y=130
+UVM_INFO ./tb/scoreboard.sv(33) @ 1105000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=98, b=32, y=130
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'h62 
+  b   integral  8     'h20 
+  y   integral  9     'h82 
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 1105000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 1105000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 55: a=228, b=187
+UVM_INFO ./tb/driver.sv(44) @ 1115000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=228, b=187
+UVM_INFO ./tb/monitor.sv(44) @ 1125000: uvm_test_top.env.agt.mon [MON] Monitoring: a=4, b=46, y=50
+UVM_INFO ./tb/scoreboard.sv(33) @ 1125000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=4, b=46, y=50
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'h4  
+  b   integral  8     'h2e 
+  y   integral  9     'h32 
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 1125000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 1125000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 56: a=187, b=191
+UVM_INFO ./tb/driver.sv(44) @ 1135000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=187, b=191
+UVM_INFO ./tb/monitor.sv(44) @ 1145000: uvm_test_top.env.agt.mon [MON] Monitoring: a=228, b=187, y=415
+UVM_INFO ./tb/scoreboard.sv(33) @ 1145000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=228, b=187, y=415
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'he4 
+  b   integral  8     'hbb 
+  y   integral  9     'h19f
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 1145000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 1145000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 57: a=83, b=6
+UVM_INFO ./tb/driver.sv(44) @ 1155000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=83, b=6
+UVM_INFO ./tb/monitor.sv(44) @ 1165000: uvm_test_top.env.agt.mon [MON] Monitoring: a=187, b=191, y=378
+UVM_INFO ./tb/scoreboard.sv(33) @ 1165000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=187, b=191, y=378
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'hbb 
+  b   integral  8     'hbf 
+  y   integral  9     'h17a
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 1165000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 1165000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 58: a=237, b=85
+UVM_INFO ./tb/driver.sv(44) @ 1175000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=237, b=85
+UVM_INFO ./tb/monitor.sv(44) @ 1185000: uvm_test_top.env.agt.mon [MON] Monitoring: a=83, b=6, y=89
+UVM_INFO ./tb/scoreboard.sv(33) @ 1185000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=83, b=6, y=89
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'h53 
+  b   integral  8     'h6  
+  y   integral  9     'h59 
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 1185000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 1185000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 59: a=185, b=189
+UVM_INFO ./tb/driver.sv(44) @ 1195000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=185, b=189
+UVM_INFO ./tb/monitor.sv(44) @ 1205000: uvm_test_top.env.agt.mon [MON] Monitoring: a=237, b=85, y=322
+UVM_INFO ./tb/scoreboard.sv(33) @ 1205000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=237, b=85, y=322
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'hed 
+  b   integral  8     'h55 
+  y   integral  9     'h142
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 1205000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 1205000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 60: a=109, b=14
+UVM_INFO ./tb/driver.sv(44) @ 1215000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=109, b=14
+UVM_INFO ./tb/monitor.sv(44) @ 1225000: uvm_test_top.env.agt.mon [MON] Monitoring: a=185, b=189, y=374
+UVM_INFO ./tb/scoreboard.sv(33) @ 1225000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=185, b=189, y=374
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'hb9 
+  b   integral  8     'hbd 
+  y   integral  9     'h176
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 1225000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 1225000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 61: a=125, b=231
+UVM_INFO ./tb/driver.sv(44) @ 1235000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=125, b=231
+UVM_INFO ./tb/monitor.sv(44) @ 1245000: uvm_test_top.env.agt.mon [MON] Monitoring: a=109, b=14, y=123
+UVM_INFO ./tb/scoreboard.sv(33) @ 1245000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=109, b=14, y=123
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'h6d 
+  b   integral  8     'he  
+  y   integral  9     'h7b 
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 1245000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 1245000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 62: a=27, b=61
+UVM_INFO ./tb/driver.sv(44) @ 1255000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=27, b=61
+UVM_INFO ./tb/monitor.sv(44) @ 1265000: uvm_test_top.env.agt.mon [MON] Monitoring: a=125, b=231, y=356
+UVM_INFO ./tb/scoreboard.sv(33) @ 1265000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=125, b=231, y=356
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'h7d 
+  b   integral  8     'he7 
+  y   integral  9     'h164
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 1265000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 1265000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 63: a=121, b=29
+UVM_INFO ./tb/driver.sv(44) @ 1275000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=121, b=29
+UVM_INFO ./tb/monitor.sv(44) @ 1285000: uvm_test_top.env.agt.mon [MON] Monitoring: a=27, b=61, y=88
+UVM_INFO ./tb/scoreboard.sv(33) @ 1285000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=27, b=61, y=88
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'h1b 
+  b   integral  8     'h3d 
+  y   integral  9     'h58 
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 1285000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 1285000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 64: a=166, b=69
+UVM_INFO ./tb/driver.sv(44) @ 1295000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=166, b=69
+UVM_INFO ./tb/monitor.sv(44) @ 1305000: uvm_test_top.env.agt.mon [MON] Monitoring: a=121, b=29, y=150
+UVM_INFO ./tb/scoreboard.sv(33) @ 1305000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=121, b=29, y=150
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'h79 
+  b   integral  8     'h1d 
+  y   integral  9     'h96 
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 1305000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 1305000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 65: a=171, b=57
+UVM_INFO ./tb/driver.sv(44) @ 1315000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=171, b=57
+UVM_INFO ./tb/monitor.sv(44) @ 1325000: uvm_test_top.env.agt.mon [MON] Monitoring: a=166, b=69, y=235
+UVM_INFO ./tb/scoreboard.sv(33) @ 1325000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=166, b=69, y=235
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'ha6 
+  b   integral  8     'h45 
+  y   integral  9     'heb 
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 1325000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 1325000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 66: a=59, b=165
+UVM_INFO ./tb/driver.sv(44) @ 1335000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=59, b=165
+UVM_INFO ./tb/monitor.sv(44) @ 1345000: uvm_test_top.env.agt.mon [MON] Monitoring: a=171, b=57, y=228
+UVM_INFO ./tb/scoreboard.sv(33) @ 1345000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=171, b=57, y=228
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'hab 
+  b   integral  8     'h39 
+  y   integral  9     'he4 
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 1345000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 1345000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 67: a=5, b=45
+UVM_INFO ./tb/driver.sv(44) @ 1355000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=5, b=45
+UVM_INFO ./tb/monitor.sv(44) @ 1365000: uvm_test_top.env.agt.mon [MON] Monitoring: a=59, b=165, y=224
+UVM_INFO ./tb/scoreboard.sv(33) @ 1365000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=59, b=165, y=224
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'h3b 
+  b   integral  8     'ha5 
+  y   integral  9     'he0 
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 1365000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 1365000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 68: a=114, b=33
+UVM_INFO ./tb/driver.sv(44) @ 1375000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=114, b=33
+UVM_INFO ./tb/monitor.sv(44) @ 1385000: uvm_test_top.env.agt.mon [MON] Monitoring: a=5, b=45, y=50
+UVM_INFO ./tb/scoreboard.sv(33) @ 1385000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=5, b=45, y=50
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'h5  
+  b   integral  8     'h2d 
+  y   integral  9     'h32 
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 1385000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 1385000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 69: a=163, b=55
+UVM_INFO ./tb/driver.sv(44) @ 1395000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=163, b=55
+UVM_INFO ./tb/monitor.sv(44) @ 1405000: uvm_test_top.env.agt.mon [MON] Monitoring: a=114, b=33, y=147
+UVM_INFO ./tb/scoreboard.sv(33) @ 1405000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=114, b=33, y=147
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'h72 
+  b   integral  8     'h21 
+  y   integral  9     'h93 
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 1405000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 1405000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 70: a=116, b=234
+UVM_INFO ./tb/driver.sv(44) @ 1415000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=116, b=234
+UVM_INFO ./tb/monitor.sv(44) @ 1425000: uvm_test_top.env.agt.mon [MON] Monitoring: a=163, b=55, y=218
+UVM_INFO ./tb/scoreboard.sv(33) @ 1425000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=163, b=55, y=218
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'ha3 
+  b   integral  8     'h37 
+  y   integral  9     'hda 
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 1425000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 1425000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 71: a=76, b=116
+UVM_INFO ./tb/driver.sv(44) @ 1435000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=76, b=116
+UVM_INFO ./tb/monitor.sv(44) @ 1445000: uvm_test_top.env.agt.mon [MON] Monitoring: a=116, b=234, y=350
+UVM_INFO ./tb/scoreboard.sv(33) @ 1445000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=116, b=234, y=350
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'h74 
+  b   integral  8     'hea 
+  y   integral  9     'h15e
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 1445000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 1445000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 72: a=19, b=171
+UVM_INFO ./tb/driver.sv(44) @ 1455000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=19, b=171
+UVM_INFO ./tb/monitor.sv(44) @ 1465000: uvm_test_top.env.agt.mon [MON] Monitoring: a=76, b=116, y=192
+UVM_INFO ./tb/scoreboard.sv(33) @ 1465000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=76, b=116, y=192
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'h4c 
+  b   integral  8     'h74 
+  y   integral  9     'hc0 
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 1465000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 1465000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 73: a=76, b=132
+UVM_INFO ./tb/driver.sv(44) @ 1475000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=76, b=132
+UVM_INFO ./tb/monitor.sv(44) @ 1485000: uvm_test_top.env.agt.mon [MON] Monitoring: a=19, b=171, y=190
+UVM_INFO ./tb/scoreboard.sv(33) @ 1485000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=19, b=171, y=190
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'h13 
+  b   integral  8     'hab 
+  y   integral  9     'hbe 
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 1485000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 1485000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 74: a=255, b=90
+UVM_INFO ./tb/driver.sv(44) @ 1495000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=255, b=90
+UVM_INFO ./tb/monitor.sv(44) @ 1505000: uvm_test_top.env.agt.mon [MON] Monitoring: a=76, b=132, y=208
+UVM_INFO ./tb/scoreboard.sv(33) @ 1505000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=76, b=132, y=208
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'h4c 
+  b   integral  8     'h84 
+  y   integral  9     'hd0 
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 1505000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 1505000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 75: a=219, b=226
+UVM_INFO ./tb/driver.sv(44) @ 1515000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=219, b=226
+UVM_INFO ./tb/monitor.sv(44) @ 1525000: uvm_test_top.env.agt.mon [MON] Monitoring: a=255, b=90, y=345
+UVM_INFO ./tb/scoreboard.sv(33) @ 1525000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=255, b=90, y=345
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'hff 
+  b   integral  8     'h5a 
+  y   integral  9     'h159
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 1525000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 1525000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 76: a=10, b=172
+UVM_INFO ./tb/driver.sv(44) @ 1535000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=10, b=172
+UVM_INFO ./tb/monitor.sv(44) @ 1545000: uvm_test_top.env.agt.mon [MON] Monitoring: a=219, b=226, y=445
+UVM_INFO ./tb/scoreboard.sv(33) @ 1545000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=219, b=226, y=445
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'hdb 
+  b   integral  8     'he2 
+  y   integral  9     'h1bd
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 1545000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 1545000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 77: a=254, b=26
+UVM_INFO ./tb/driver.sv(44) @ 1555000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=254, b=26
+UVM_INFO ./tb/monitor.sv(44) @ 1565000: uvm_test_top.env.agt.mon [MON] Monitoring: a=10, b=172, y=182
+UVM_INFO ./tb/scoreboard.sv(33) @ 1565000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=10, b=172, y=182
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'ha  
+  b   integral  8     'hac 
+  y   integral  9     'hb6 
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 1565000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 1565000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 78: a=240, b=25
+UVM_INFO ./tb/driver.sv(44) @ 1575000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=240, b=25
+UVM_INFO ./tb/monitor.sv(44) @ 1585000: uvm_test_top.env.agt.mon [MON] Monitoring: a=254, b=26, y=280
+UVM_INFO ./tb/scoreboard.sv(33) @ 1585000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=254, b=26, y=280
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'hfe 
+  b   integral  8     'h1a 
+  y   integral  9     'h118
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 1585000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 1585000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 79: a=145, b=63
+UVM_INFO ./tb/driver.sv(44) @ 1595000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=145, b=63
+UVM_INFO ./tb/monitor.sv(44) @ 1605000: uvm_test_top.env.agt.mon [MON] Monitoring: a=240, b=25, y=265
+UVM_INFO ./tb/scoreboard.sv(33) @ 1605000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=240, b=25, y=265
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'hf0 
+  b   integral  8     'h19 
+  y   integral  9     'h109
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 1605000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 1605000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 80: a=147, b=167
+UVM_INFO ./tb/driver.sv(44) @ 1615000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=147, b=167
+UVM_INFO ./tb/monitor.sv(44) @ 1625000: uvm_test_top.env.agt.mon [MON] Monitoring: a=145, b=63, y=208
+UVM_INFO ./tb/scoreboard.sv(33) @ 1625000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=145, b=63, y=208
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'h91 
+  b   integral  8     'h3f 
+  y   integral  9     'hd0 
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 1625000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 1625000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 81: a=83, b=139
+UVM_INFO ./tb/driver.sv(44) @ 1635000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=83, b=139
+UVM_INFO ./tb/monitor.sv(44) @ 1645000: uvm_test_top.env.agt.mon [MON] Monitoring: a=147, b=167, y=314
+UVM_INFO ./tb/scoreboard.sv(33) @ 1645000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=147, b=167, y=314
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'h93 
+  b   integral  8     'ha7 
+  y   integral  9     'h13a
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 1645000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 1645000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 82: a=145, b=165
+UVM_INFO ./tb/driver.sv(44) @ 1655000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=145, b=165
+UVM_INFO ./tb/monitor.sv(44) @ 1665000: uvm_test_top.env.agt.mon [MON] Monitoring: a=83, b=139, y=222
+UVM_INFO ./tb/scoreboard.sv(33) @ 1665000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=83, b=139, y=222
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'h53 
+  b   integral  8     'h8b 
+  y   integral  9     'hde 
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 1665000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 1665000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 83: a=125, b=44
+UVM_INFO ./tb/driver.sv(44) @ 1675000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=125, b=44
+UVM_INFO ./tb/monitor.sv(44) @ 1685000: uvm_test_top.env.agt.mon [MON] Monitoring: a=145, b=165, y=310
+UVM_INFO ./tb/scoreboard.sv(33) @ 1685000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=145, b=165, y=310
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'h91 
+  b   integral  8     'ha5 
+  y   integral  9     'h136
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 1685000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 1685000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 84: a=174, b=127
+UVM_INFO ./tb/driver.sv(44) @ 1695000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=174, b=127
+UVM_INFO ./tb/monitor.sv(44) @ 1705000: uvm_test_top.env.agt.mon [MON] Monitoring: a=125, b=44, y=169
+UVM_INFO ./tb/scoreboard.sv(33) @ 1705000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=125, b=44, y=169
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'h7d 
+  b   integral  8     'h2c 
+  y   integral  9     'ha9 
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 1705000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 1705000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 85: a=202, b=226
+UVM_INFO ./tb/driver.sv(44) @ 1715000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=202, b=226
+UVM_INFO ./tb/monitor.sv(44) @ 1725000: uvm_test_top.env.agt.mon [MON] Monitoring: a=174, b=127, y=301
+UVM_INFO ./tb/scoreboard.sv(33) @ 1725000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=174, b=127, y=301
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'hae 
+  b   integral  8     'h7f 
+  y   integral  9     'h12d
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 1725000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 1725000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 86: a=101, b=77
+UVM_INFO ./tb/driver.sv(44) @ 1735000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=101, b=77
+UVM_INFO ./tb/monitor.sv(44) @ 1745000: uvm_test_top.env.agt.mon [MON] Monitoring: a=202, b=226, y=428
+UVM_INFO ./tb/scoreboard.sv(33) @ 1745000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=202, b=226, y=428
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'hca 
+  b   integral  8     'he2 
+  y   integral  9     'h1ac
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 1745000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 1745000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 87: a=208, b=142
+UVM_INFO ./tb/driver.sv(44) @ 1755000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=208, b=142
+UVM_INFO ./tb/monitor.sv(44) @ 1765000: uvm_test_top.env.agt.mon [MON] Monitoring: a=101, b=77, y=178
+UVM_INFO ./tb/scoreboard.sv(33) @ 1765000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=101, b=77, y=178
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'h65 
+  b   integral  8     'h4d 
+  y   integral  9     'hb2 
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 1765000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 1765000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 88: a=128, b=217
+UVM_INFO ./tb/driver.sv(44) @ 1775000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=128, b=217
+UVM_INFO ./tb/monitor.sv(44) @ 1785000: uvm_test_top.env.agt.mon [MON] Monitoring: a=208, b=142, y=350
+UVM_INFO ./tb/scoreboard.sv(33) @ 1785000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=208, b=142, y=350
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'hd0 
+  b   integral  8     'h8e 
+  y   integral  9     'h15e
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 1785000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 1785000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 89: a=239, b=194
+UVM_INFO ./tb/driver.sv(44) @ 1795000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=239, b=194
+UVM_INFO ./tb/monitor.sv(44) @ 1805000: uvm_test_top.env.agt.mon [MON] Monitoring: a=128, b=217, y=345
+UVM_INFO ./tb/scoreboard.sv(33) @ 1805000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=128, b=217, y=345
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'h80 
+  b   integral  8     'hd9 
+  y   integral  9     'h159
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 1805000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 1805000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 90: a=102, b=61
+UVM_INFO ./tb/driver.sv(44) @ 1815000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=102, b=61
+UVM_INFO ./tb/monitor.sv(44) @ 1825000: uvm_test_top.env.agt.mon [MON] Monitoring: a=239, b=194, y=433
+UVM_INFO ./tb/scoreboard.sv(33) @ 1825000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=239, b=194, y=433
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'hef 
+  b   integral  8     'hc2 
+  y   integral  9     'h1b1
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 1825000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 1825000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 91: a=156, b=50
+UVM_INFO ./tb/driver.sv(44) @ 1835000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=156, b=50
+UVM_INFO ./tb/monitor.sv(44) @ 1845000: uvm_test_top.env.agt.mon [MON] Monitoring: a=102, b=61, y=163
+UVM_INFO ./tb/scoreboard.sv(33) @ 1845000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=102, b=61, y=163
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'h66 
+  b   integral  8     'h3d 
+  y   integral  9     'ha3 
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 1845000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 1845000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 92: a=126, b=110
+UVM_INFO ./tb/driver.sv(44) @ 1855000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=126, b=110
+UVM_INFO ./tb/monitor.sv(44) @ 1865000: uvm_test_top.env.agt.mon [MON] Monitoring: a=156, b=50, y=206
+UVM_INFO ./tb/scoreboard.sv(33) @ 1865000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=156, b=50, y=206
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'h9c 
+  b   integral  8     'h32 
+  y   integral  9     'hce 
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 1865000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 1865000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 93: a=135, b=252
+UVM_INFO ./tb/driver.sv(44) @ 1875000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=135, b=252
+UVM_INFO ./tb/monitor.sv(44) @ 1885000: uvm_test_top.env.agt.mon [MON] Monitoring: a=126, b=110, y=236
+UVM_INFO ./tb/scoreboard.sv(33) @ 1885000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=126, b=110, y=236
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'h7e 
+  b   integral  8     'h6e 
+  y   integral  9     'hec 
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 1885000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 1885000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 94: a=160, b=173
+UVM_INFO ./tb/driver.sv(44) @ 1895000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=160, b=173
+UVM_INFO ./tb/monitor.sv(44) @ 1905000: uvm_test_top.env.agt.mon [MON] Monitoring: a=135, b=252, y=387
+UVM_INFO ./tb/scoreboard.sv(33) @ 1905000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=135, b=252, y=387
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'h87 
+  b   integral  8     'hfc 
+  y   integral  9     'h183
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 1905000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 1905000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 95: a=4, b=3
+UVM_INFO ./tb/driver.sv(44) @ 1915000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=4, b=3
+UVM_INFO ./tb/monitor.sv(44) @ 1925000: uvm_test_top.env.agt.mon [MON] Monitoring: a=160, b=173, y=333
+UVM_INFO ./tb/scoreboard.sv(33) @ 1925000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=160, b=173, y=333
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'ha0 
+  b   integral  8     'had 
+  y   integral  9     'h14d
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 1925000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 1925000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 96: a=233, b=53
+UVM_INFO ./tb/driver.sv(44) @ 1935000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=233, b=53
+UVM_INFO ./tb/monitor.sv(44) @ 1945000: uvm_test_top.env.agt.mon [MON] Monitoring: a=4, b=3, y=7
+UVM_INFO ./tb/scoreboard.sv(33) @ 1945000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=4, b=3, y=7
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'h4  
+  b   integral  8     'h3  
+  y   integral  9     'h7  
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 1945000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 1945000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 97: a=105, b=245
+UVM_INFO ./tb/driver.sv(44) @ 1955000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=105, b=245
+UVM_INFO ./tb/monitor.sv(44) @ 1965000: uvm_test_top.env.agt.mon [MON] Monitoring: a=233, b=53, y=286
+UVM_INFO ./tb/scoreboard.sv(33) @ 1965000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=233, b=53, y=286
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'he9 
+  b   integral  8     'h35 
+  y   integral  9     'h11e
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 1965000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 1965000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 98: a=91, b=129
+UVM_INFO ./tb/driver.sv(44) @ 1975000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=91, b=129
+UVM_INFO ./tb/monitor.sv(44) @ 1985000: uvm_test_top.env.agt.mon [MON] Monitoring: a=105, b=245, y=350
+UVM_INFO ./tb/scoreboard.sv(33) @ 1985000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=105, b=245, y=350
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'h69 
+  b   integral  8     'hf5 
+  y   integral  9     'h15e
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 1985000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO ./tb/sequence.sv(25) @ 1985000: uvm_test_top.env.agt.sqr@@seq [SEQ] Generated item 99: a=72, b=190
+UVM_INFO ./tb/driver.sv(44) @ 1995000: uvm_test_top.env.agt.drv [DRIVER] Driving: a=72, b=190
+UVM_INFO ./tb/monitor.sv(44) @ 2005000: uvm_test_top.env.agt.mon [MON] Monitoring: a=91, b=129, y=220
+UVM_INFO ./tb/scoreboard.sv(33) @ 2005000: uvm_test_top.env.scb [SCOREBOARD] Scoreboard received: a=91, b=129, y=220
+---------------------------
+Name  Type      Size  Value
+---------------------------
+item  seq_item  -     @589 
+  a   integral  8     'h5b 
+  b   integral  8     'h81 
+  y   integral  9     'hdc 
+---------------------------
+UVM_INFO ./tb/scoreboard.sv(39) @ 2005000: uvm_test_top.env.scb [SCOREBOARD] Match: Correct sum
+UVM_INFO /tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_objection.svh(1276) @ 2005000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO /tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_report_catcher.svh(705) @ 2005000: reporter [UVM/REPORT/CATCHER] 
+--- UVM Report catcher Summary ---
+
+
+Number of demoted UVM_FATAL reports  :    0
+Number of demoted UVM_ERROR reports  :    0
+Number of demoted UVM_WARNING reports:    0
+Number of caught UVM_FATAL reports   :    0
+Number of caught UVM_ERROR reports   :    0
+Number of caught UVM_WARNING reports :    0
+
+UVM_INFO /tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_report_server.svh(904) @ 2005000: reporter [UVM/REPORT/SERVER] 
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :  505
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[DRIVER]   100
+[MON]   100
+[RNTST]     1
+[SCOREBOARD]   200
+[SEQ]   100
+[TEST_DONE]     1
+[UVM/RELNOTES]     1
+[UVM/REPORT/CATCHER]     1
+[UVMTOP]     1
+
+$finish called from file "/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_root.svh", line 527.
+$finish at simulation time              2005000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 2005000 ps
+CPU Time:      0.240 seconds;       Data structure size:   0.6Mb
+Mon Nov 17 02:12:43 2025
