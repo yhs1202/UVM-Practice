@@ -1,5 +1,3 @@
-import "DPI-C" context function int unsigned addFunc(int unsigned a, int unsigned b, int unsigned c);
-
 `uvm_analysis_imp_decl(_in_lb_ro)
 `uvm_analysis_imp_decl(_out_lb_ro)
 
@@ -36,10 +34,9 @@ class lb_ro_sb_c extends uvm_scoreboard;
     endfunction : build_phase
 
     // Report phase
-    virtual function void report_phase(uvm_phase phase);
+    function void report_phase(uvm_phase phase);
         super.report_phase(phase);
         `uvm_info(get_type_name(), "Report Phase started", UVM_LOW)
-        if ()
     endfunction : report_phase
 
     // Write methods for input analysis ports
