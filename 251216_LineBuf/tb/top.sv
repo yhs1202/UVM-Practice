@@ -30,8 +30,10 @@ module top;
   end
 
   initial begin
-    $dumpfile("dump.vcd");
-    $dumpvars(0, top);
+    // $dumpfile("dump.vcd");
+    // $dumpvars(0, top);
+    $fsdbDumpfile("dump.fsdb");
+    $fsdbDumpvars(0, top);
   end
 
 endmodule

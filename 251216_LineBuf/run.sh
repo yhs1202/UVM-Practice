@@ -9,7 +9,7 @@ mkdir -p $OUT
 timestamp=$(date +%Y%m%d_%H%M%S)
 
 vcs -full64 -sverilog \
-    -ntb_opts uvm-1.2 \
+    -ntb_opts uvm-1.1 \
     -debug_access+all -kdb \
     -timescale=1ns/1ps \
     -Mdir=$OUT/csrc \
