@@ -26,21 +26,20 @@ class lb_ro_monitor_c extends uvm_monitor;
         end
 
         `uvm_info(get_type_name(), $sformatf("build_phase() ends.."), UVM_LOW)
-    endfunction
+    endfunction : build_phase
 
     // Run phase
     virtual task run_phase(uvm_phase phase);
         super.run_phase(phase);
         fork
-            forever begin
-                // Wait for clock edge when not in reset, iff: if and only if
-                @(posedge lb_ro_vif.i_clk iff lb_ro_vif.i_rstn);
-                in_data();
-            end
-            forever begin
-                @(posedge lb_ro_vif.i_clk iff lb_ro_vif.i_rstn);
-                out_valid_data();
-            end
+        forever begin
+            @(posedge lb_ro_vif.i_clk iff (lb_ro_vif.i_rstn && lb_ro_vif.i_de));
+            in_data();
+        end
+        forever begin
+            @(posedge lb_ro_vif.i_clk iff (lb_ro_vif.i_rstn && lb_ro_vif.o_de));
+            out_valid_data();
+        end
         join_none
     endtask : run_phase
 
@@ -66,20 +65,17 @@ class lb_ro_monitor_c extends uvm_monitor;
         in_pkt.i_b_data        = lb_ro_vif.i_b_data    ;
         in_data_port.write(in_pkt);
         `uvm_info(get_type_name(), $sformatf("in_data() ends.."), UVM_MEDIUM)
-    endtask :in_data
+    endtask : in_data
 
     task out_valid_data();
-        if (lb_ro_vif.o_hsync) begin
-          `uvm_info(get_type_name(), $sformatf("out_valid_data() starts.."), UVM_MEDIUM)
-          out_pkt = lb_ro_mon_pkt_c::type_id::create("out_pkt", this);
-          out_pkt.o_vsync   = lb_ro_vif.o_vsync     ;
-          out_pkt.o_hsync   = lb_ro_vif.o_hsync     ;
-          out_pkt.o_r_data  = lb_ro_vif.o_r_data    ;
-          out_pkt.o_g_data  = lb_ro_vif.o_g_data    ;
-          out_pkt.o_b_data  = lb_ro_vif.o_b_data    ;
-          out_data_port.write(out_pkt);
-          `uvm_info(get_type_name(), $sformatf("out_valid_data() ends.."), UVM_MEDIUM)
-        end
+        `uvm_info(get_type_name(), "out_data sampling..", UVM_HIGH)
+        out_pkt = lb_ro_mon_pkt_c::type_id::create("out_pkt");
+        out_pkt.o_vsync   = lb_ro_vif.o_vsync     ;
+        out_pkt.o_hsync   = lb_ro_vif.o_hsync     ;
+        out_pkt.o_r_data  = lb_ro_vif.o_r_data    ;
+        out_pkt.o_g_data  = lb_ro_vif.o_g_data    ;
+        out_pkt.o_b_data  = lb_ro_vif.o_b_data    ;
+        out_data_port.write(out_pkt);
     endtask : out_valid_data
 
 endclass : lb_ro_monitor_c
