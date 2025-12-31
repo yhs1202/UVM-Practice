@@ -5,8 +5,7 @@ This repository contains a UVM-1.2 based verification environment for practicing
 It also includes a comprehensive UVM Study Log, detailing the methodology's architecture and advanced concepts.
 
 <details>
-
-**<summary>Project Setup & Makefile</summary>**
+  <summary><strong>Project Setup & Makefile</strong></summary>
 
 ## Prerequisites
 - Synopsys VCS simulator
@@ -272,6 +271,7 @@ This section contains a detailed study log of UVM concepts, architecture, and ad
 
 # Reference
 
+SystemVerilog (IEEE 1800-2017) LRM: https://ieeexplore.ieee.org/document/8299595
 
 VLSI Verify UVM: https://vlsiverify.com/uvm/
 
@@ -282,5 +282,7 @@ Verification Guide UVM: https://verificationguide.com/uvm/uvm-tutorial/
 Siemens Verification Academy UVM Cookbook: https://verificationacademy.com/topics/uvm-universal-verification-methodology/
 
 UVM IEEE 1800.2 Reference Implementation: https://github.com/accellera-official/uvm-core
+
+UVM IEEE 1800.2-2020 LRM: https://ieeexplore.ieee.org/document/9195920
 
 UVM 1.2 Reference Implementation: https://github.com/gchinna/uvm-1.2
